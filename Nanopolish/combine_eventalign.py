@@ -140,8 +140,8 @@ if __name__ == '__main__':
     parser.add_argument('--shift', type=int, default=2)
     args = parser.parse_args()
 
-    root_dir = 'D://Nanopore_Data//Nanopolish_demo//ecoli_2kb_region//'
-    eventalign_file_name = root_dir + 'reads-ref.eventalign.txt'
-    args.eventalign_file_name = eventalign_file_name
+    # root_dir = 'D://Nanopore_Data//Nanopolish_demo//ecoli_2kb_region//'
+    # eventalign_file_name = root_dir + 'reads-ref.eventalign.txt'
+    # args.eventalign_file_name = eventalign_file_name
     combine_eventalign(args.eventalign_file_name, args.combined_file_name, args.shift)
     print('* Already combined the eventalign file!')
