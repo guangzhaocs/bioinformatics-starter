@@ -17,21 +17,21 @@ def combine_eventalign(eventalign_file_name, combined_file_name=None, shift=2):
 
     Example:
     Original file:
-    ==========================================================================================================================
+    ================================================================================================================
     contig	position	reference_kmer	read_index	strand	event_index	event_level_mean ...	start_idx	end_idx
-    --------------------------------------------------------------------------------------------------------------------------
+    ----------------------------------------------------------------------------------------------------------------
     gi|545778205|gb|U00096.3|:c514859-514401	3	ATGGAG	0	t	16538	98.58	...	81407	81411
     gi|545778205|gb|U00096.3|:c514859-514401	3	ATGGAG	0	t	16537	97.60	...	81403	81407
     gi|545778205|gb|U00096.3|:c514859-514401	3	ATGGAG	0	t	16536	104.00	...	81398	81403
     gi|545778205|gb|U00096.3|:c514859-514401	3	ATGGAG	0	t	16535	89.95	...	81392	81398
-    ==========================================================================================================================
+    ================================================================================================================
 
     After combining:
-    =================================================================================================
+    =======================================================================================
     contig	read_index	position	trans_position	kmer	mean	start_idx	end_idx
-    -------------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------
     gi|545778205|gb|U00096.3|:c514859-514401	0	3	5	ATGGAG	97.53	81392	81411
-    =================================================================================================
+    =======================================================================================
 
     trans_position = position + shift(default: 2)
     You can ignore the trans_position if you do not need it.
@@ -64,6 +64,7 @@ def combine_eventalign(eventalign_file_name, combined_file_name=None, shift=2):
     curent_position_start_idx = int(first_line[-2])
     curent_position_end_idx = int(first_line[-1])
     curent_kmer_list = [float(first_line[6])]
+    curent_indice_list = [curent_position_start_idx, curent_position_end_idx]
     f.close()
 
     print('* Start to processing ... ')
@@ -91,10 +92,15 @@ def combine_eventalign(eventalign_file_name, combined_file_name=None, shift=2):
 
                         # Secondly, update some parameters
                         curent_kmer_list.append(float(line[6]))
+                        curent_indice_list.append(int(line[-1]))
+                        curent_indice_list.append(int(line[-2]))
 
                     # a new position, wirte down the current kmer to the new file
                     else:
                         assert curent_position_end_idx >= curent_position_start_idx
+                        assert curent_position_start_idx == min(curent_indice_list)
+                        assert curent_position_end_idx == max(curent_indice_list)
+
                         mean = np.mean(np.array(curent_kmer_list))
                         mean = np.around(mean, decimals=2)
                         combined_kmer = curent_contig + '\t' + curent_read_index + '\t' + str(curent_position_id) \
@@ -110,6 +116,7 @@ def combine_eventalign(eventalign_file_name, combined_file_name=None, shift=2):
                         curent_position_start_idx = int(line[-2])
                         curent_position_end_idx = int(line[-1])
                         curent_kmer_list = [float(line[6])]
+                        curent_indice_list = [curent_position_start_idx, curent_position_end_idx]
 
                     # the last line
                     if i == num_lines - 1:
@@ -133,8 +140,8 @@ if __name__ == '__main__':
     parser.add_argument('--shift', type=int, default=2)
     args = parser.parse_args()
 
-    # root_dir = 'D://Nanopore_Data//Nanopolish_demo//ecoli_2kb_region//'
-    # eventalign_file_name = root_dir + 'reads-ref.eventalign.txt'
-    # args.eventalign_file_name = eventalign_file_name
+    root_dir = 'D://Nanopore_Data//Nanopolish_demo//ecoli_2kb_region//'
+    eventalign_file_name = root_dir + 'reads-ref.eventalign.txt'
+    args.eventalign_file_name = eventalign_file_name
     combine_eventalign(args.eventalign_file_name, args.combined_file_name, args.shift)
     print('* Already combined the eventalign file!')
