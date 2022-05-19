@@ -24,7 +24,7 @@ conda install -c bioconda seqkit
 seqkit subseq --bed test.bed -o test.fa GRCh38.primary_assembly.genome.fa
 ```
 
-`test.bed` file contains three columns (using \t to split):
+`test.bed` file contains three columns (using `\t` to split):
 ```
 chrom chrom_start_pos chrom_end_pos 
 ```
