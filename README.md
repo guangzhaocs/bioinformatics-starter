@@ -38,7 +38,7 @@ chrom chrom_start_pos chrom_end_pos
 
 还需要注意test.bed文件和输出test.fa（起始位置需要加1）的不同：
 
-`test.fa` exmaple 
+`test.fa` example:
 ```
 >3_134561561-134561960:. 
 AAATAAAAATAAACACCAAAGAGTTACTGTCATCTGAAGTAGCAGCTCTTTAAAAACATG...
