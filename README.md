@@ -17,7 +17,7 @@ nanopolish eventalign \
     --summary summary.txt \
     --scale-events > eventalign.txt
 ```
-## 3. seqkit
+## 3. seqkit（根据起始位置从基因组中提取序列）
 
 ```
 conda install -c bioconda seqkit
