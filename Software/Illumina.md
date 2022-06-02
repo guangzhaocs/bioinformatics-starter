@@ -4,6 +4,24 @@
 
 ## Download Dataset
 
+### Install aspera(ascp)
+
+Step 1:
+```
+conda install -y -c hcc aspera-cli
+conda install -y -c bioconda sra-tools
+```
+
+Step 2:
+```
+ascp -h
+```
+
+Step 3:
+```
+ which ascp
+/scratch/work/chengg1/myconda/conda_envs/nanopolish_env/bin/ascp
+```
 
 
 ## Reference
