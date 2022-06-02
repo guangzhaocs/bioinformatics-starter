@@ -1,5 +1,6 @@
-## 
+## Illumina
 
+10x Genomics的文库结构，根据碱基长度，就不难推测它们分别是R1（26bp：cell barcode和UMI序列）、R2（98bp：插入片段）和I1（8bp：index序列）.
 
 
 ## Download Dataset
