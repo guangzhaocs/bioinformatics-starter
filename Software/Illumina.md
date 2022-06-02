@@ -19,9 +19,15 @@ ascp -h
 
 Step 3:
 ```
- which ascp
-/scratch/work/chengg1/myconda/conda_envs/nanopolish_env/bin/ascp
+which ascp
 ```
+/scratch/work/chengg1/myconda/conda_envs/nanopolish_env/bin/ascp
+
+Step 4:
+```
+ls /scratch/work/chengg1/myconda/conda_envs/nanopolish_env/etc/asperaweb_id_dsa.openssh
+```
+/scratch/work/chengg1/myconda/conda_envs/nanopolish_env/etc/asperaweb_id_dsa.openssh
 
 
 ## Reference
