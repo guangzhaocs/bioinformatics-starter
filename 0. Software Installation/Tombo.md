@@ -1,12 +1,12 @@
 ### Installation
 
-Creat anaconda environment
-            conda create -n tombo_env python=3.7
+## Creat anaconda environment
+`conda create -n tombo_env python=3.7`
 
-Set up channels (https://bioconda.github.io/user/install.html#install-conda)
-conda config --add channels defaults
+## Set up channels (https://bioconda.github.io/user/install.html#install-conda)
+`conda config --add channels defaults
 conda config --add channels bioconda
-conda config --add channels conda-forge
+conda config --add channels conda-forge`
 
 Install Tombo
  conda install -c bioconda ont-tombo
