@@ -1,14 +1,17 @@
-### Installation
+# Installation
 
 ## Creat anaconda environment
 `conda create -n tombo_env python=3.7`
 
-## Set up channels (https://bioconda.github.io/user/install.html#install-conda)
-`conda config --add channels defaults
-conda config --add channels bioconda
-conda config --add channels conda-forge`
+## Set up channels
 
-Install Tombo
+ (https://bioconda.github.io/user/install.html#install-conda)
+ 
+`conda config --add channels defaults`
+`conda config --add channels bioconda`
+`conda config --add channels conda-forge`
+
+## Install Tombo
  conda install -c bioconda ont-tombo
 
 Install ont_fast5_api (https://pypi.org/project/ont-fast5-api/) for multi_to_single_fast5
