@@ -26,6 +26,5 @@ samtools --version
 conda install nanopolish
 nanopolish --version
 samtools --version
-
 ```
  
