@@ -21,12 +21,16 @@ conda install -c bioconda ont-tombo
 
 ### 4. Install ont_fast5_api
 Install ont_fast5_api (https://pypi.org/project/ont-fast5-api/) for multi_to_single_fast5
-```pip install ont-fast5-api```
+```
+pip install ont-fast5-api
+```
 
 ### 5. Update NumPy  
 In Tombo, the version of NumPy must be lower 1.20，otherwise it will have ValueError: cannot convert float NaN to integer.(https://github.com/nanoporetech/tombo/issues/319)
 
-```conda install numpy=1.19.5```
+```
+conda install numpy=1.19.5
+```
 
 
 # Demo
