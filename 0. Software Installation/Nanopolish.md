@@ -8,11 +8,6 @@ Attention: Do not use the Nanopolish Installation Tutorial and you must install 
 ```
 conda create -n nanopolish_env python=3.7
 source activate nanopolish_env 
-conda install -c bioconda samtools=1.9 --force-reinstall
-samtools --version
-conda install nanopolish
-nanopolish --version
-samtools --version
 ```
 
 ### 2. Install samtools
