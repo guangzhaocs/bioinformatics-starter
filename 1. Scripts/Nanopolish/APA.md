@@ -34,10 +34,8 @@ Examples in `KO-rep1.extract.bed12` (line 21-30):
 ```
 
 ## Step 4: bedToGenePred
-
-`bedToGenePred` source code : https://github.com/ENCODE-DCC/kentUtils/blob/master/src/utils/bedToGenePred/bedToGenePred
-
 Convert the relative position to absolute position. 
+`bedToGenePred` source code : https://github.com/ENCODE-DCC/kentUtils/blob/master/src/utils/bedToGenePred/bedToGenePred
 ```
 cd ..
 bedToGenePred origin_download_fastq_bam_filter_to_bed/KO-rep1.extract.bed12 KO-rep1.extract.bed12.pred
@@ -54,4 +52,10 @@ ed24c30c-40d4-4060-acb8-c1533faceee9    1    -    294876  296718  294876  296718
 a0990902-ef61-42d8-9405-5c8c7103b543    1    +    629651  689958  629651  689958    3       629651,630425,689941,   629972,630526,689958,
 050ef887-e254-479d-bae4-d66c5fe945ee    1    +    629652  630206  629652  630206    1       629652,   630206,
 43e706ae-c766-4a55-a32f-55dfba282570    1    +    629652  630476  629652  630476    1       629652,   630476,
+```
+
+## Step 5: genePredToGtf
+ Convert genePred table or file to gtf.
+```
+genePredToGtf "file" KO-rep1.extract.bed12.pred KO-rep1.out.gtf
 ```
