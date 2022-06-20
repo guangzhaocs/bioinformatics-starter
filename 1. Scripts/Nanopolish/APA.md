@@ -1,9 +1,13 @@
 
 ## Overview
 ```
+Phrase 1: bam to gtf
 (Step 2) samtools view -h -q 5 -F 4 -F 256 -F 2048 -Sb HEK293T-Mettl3-KO-rep1.bam > HEK293T-Mettl3-KO-rep1.filter.bam
 (Step 3-5.1) bedtools bamtobed -bed12 -split -i HEK293T-Mettl3-KO-rep1.filter.bam|bedToGenePred /dev/stdin /dev/stdout|genePredToGtf "file" stdin KO-rep1.out.gtf
 (Step 5.2) cat KO-rep1.out.gtf|awk -F"\t" '{if($3=="transcript"){print $0}}' > KO-rep1.out2.gtf && rm KO-rep1.out.gtf
+
+Phrase 2: extract the last site
+(Step 6) cat gene_out2.gtf| awk -F "[\t;]" '{if($7=="+"){print $1"\t"$5"\t"$9}else{print $1"\t"$4"\t"$9}}' |sed 's/gene_id//g' |sed 's/"//g' > pAsite_gene.txt
 ```
 
 ## Step 1: minimap2
