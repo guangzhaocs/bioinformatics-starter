@@ -28,6 +28,8 @@ Examples in `KO-rep1.extract.bed12` (line 21-30):
 ```
 
 ## Step 4: bedToGenePred
+
+`bedToGenePred` source code : https://github.com/ENCODE-DCC/kentUtils/blob/master/src/utils/bedToGenePred/bedToGenePred
 ```
 cd ..
 bedToGenePred origin_download_fastq_bam_filter_to_bed/KO-rep1.extract.bed12 KO-rep1.extract.bed12.pred
