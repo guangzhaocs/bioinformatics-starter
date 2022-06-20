@@ -1,4 +1,10 @@
 
+## Overview
+```
+(Step 2) samtools view -h -q 5 -F 4 -F 256 -F 2048 -Sb HEK293T-Mettl3-KO-rep1.bam > HEK293T-Mettl3-KO-rep1.filter.bam
+(Step 3-5.1) bedtools bamtobed -bed12 -split -i HEK293T-Mettl3-KO-rep1.filter.bam|bedToGenePred /dev/stdin /dev/stdout|genePredToGtf "file" stdin KO-rep1.out.gtf
+(Step 5.2) cat KO-rep1.out.gtf|awk -F"\t" '{if($3=="transcript"){print $0}}' > KO-rep1.out2.gtf && rm KO-rep1.out.gtf
+```
 
 ## Step 1: minimap2
 
@@ -55,6 +61,8 @@ a0990902-ef61-42d8-9405-5c8c7103b543    1    +    629651  689958  629651  689958
 ```
 
 ## Step 5: genePredToGtf
+
+### Step 5.1: genePredToGtf
  Convert genePred table or file to gtf.
 ```
 genePredToGtf "file" KO-rep1.extract.bed12.pred KO-rep1.out.gtf
