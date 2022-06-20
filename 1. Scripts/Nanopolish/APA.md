@@ -11,7 +11,7 @@ samtools view -h -q 5 -F 4 -F 256 -F 2048 -Sb origin_download_bam/HEK293T-Mettl3
 ```
 ## Step 3: bamtobed
 ```
-bedtools bamtobed -bed12 -split -i /scratch/cs/nanopore/nanopore_modification/xpore_dataset/origin_download_fastq_bam_filter/HEK293T-Mettl3-KO-rep1.bam > KO-rep1.extract.bed12
+bedtools bamtobed -bed12 -split -i origin_download_fastq_bam_filter/HEK293T-Mettl3-KO-rep1.bam > origin_download_fastq_bam_filter_to_bed/KO-rep1.extract.bed12
 ```
 Examples in `KO-rep1.extract.bed12` (line 21-30):
 ```
