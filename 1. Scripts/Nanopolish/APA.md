@@ -60,6 +60,7 @@ a0990902-ef61-42d8-9405-5c8c7103b543    1    +    629651  689958  629651  689958
 genePredToGtf "file" KO-rep1.extract.bed12.pred KO-rep1.out.gtf
 ```
 
+Examples in `KO-rep1.out.gtf`:
 ```
 1       KO-rep1.extract.bed12.pred      transcript      186975  195419  .       -       .       gene_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; transcript_id "5135f71c-246c-49fa-a277-6843b8cb65a9";
 1       KO-rep1.extract.bed12.pred      exon    186975  187287  .       -       .       gene_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; transcript_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; exon_number "1"; exon_id "5135f71c-246c-49fa-a277-6843b8cb65a9.1";
@@ -83,4 +84,22 @@ genePredToGtf "file" KO-rep1.extract.bed12.pred KO-rep1.out.gtf
 1       KO-rep1.extract.bed12.pred      exon    629650  629977  .       +       .       gene_id "7dde27aa-6110-4f80-98b6-44a880cebe88"; transcript_id "7dde27aa-6110-4f80-98b6-44a880cebe88"; exon_number "1"; exon_id "7dde27aa-6110-4f80-98b6-44a880cebe88.1";
 1       KO-rep1.extract.bed12.pred      CDS     629650  629977  .       +       0       gene_id "7dde27aa-6110-4f80-98b6-44a880cebe88"; transcript_id "7dde27aa-6110-4f80-98b6-44a880cebe88"; exon_number "1"; exon_id "7dde27aa-6110-4f80-98b6-44a880cebe88.1";
 1       KO-rep1.extract.bed12.pred      start_codon     629650  629652  .       +       0       gene_id "7dde27aa-6110-4f80-98b6-44a880cebe88"; transcript_id "7dde27aa-6110-4f80-98b6-44a880cebe88"; exon_number "1"; exon_id "7dde27aa-6110-4f80-98b6-44a880cebe88.1";
+```
+
+
+```
+cat KO-rep1.out.gtf|awk -F"\t" '{if($3=="transcript"){print $0}}' > KO-rep1.out2.gtf && rm KO-rep1.out.gtf
+```
+Examples in `KO-rep1.out2.gtf`:
+```
+1       KO-rep1.extract.bed12.pred      transcript      186964  188245  .       -       .       gene_id "3e590b49-2735-46ad-bf9c-e2ab39c9c8c1"; transcript_id "3e590b49-2735-46ad-bf9c-e2ab39c9c8c1";
+1       KO-rep1.extract.bed12.pred      transcript      186969  188577  .       -       .       gene_id "4ab27082-5ff4-406d-93dd-75e1f47f59a9"; transcript_id "4ab27082-5ff4-406d-93dd-75e1f47f59a9";
+1       KO-rep1.extract.bed12.pred      transcript      186969  195917  .       -       .       gene_id "dbc150c4-4e46-4b7e-acbd-341312d26d12"; transcript_id "dbc150c4-4e46-4b7e-acbd-341312d26d12";
+1       KO-rep1.extract.bed12.pred      transcript      186975  195419  .       -       .       gene_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; transcript_id "5135f71c-246c-49fa-a277-6843b8cb65a9";
+1       KO-rep1.extract.bed12.pred      transcript      294877  296718  .       -       .       gene_id "ed24c30c-40d4-4060-acb8-c1533faceee9"; transcript_id "ed24c30c-40d4-4060-acb8-c1533faceee9";
+1       KO-rep1.extract.bed12.pred      transcript      629650  629977  .       +       .       gene_id "7dde27aa-6110-4f80-98b6-44a880cebe88"; transcript_id "7dde27aa-6110-4f80-98b6-44a880cebe88";
+1       KO-rep1.extract.bed12.pred      transcript      629650  630001  .       +       .       gene_id "5d0efd71-5d81-44bf-b65d-3dd3172a0870"; transcript_id "5d0efd71-5d81-44bf-b65d-3dd3172a0870";
+1       KO-rep1.extract.bed12.pred      transcript      629652  689958  .       +       .       gene_id "a0990902-ef61-42d8-9405-5c8c7103b543"; transcript_id "a0990902-ef61-42d8-9405-5c8c7103b543";
+1       KO-rep1.extract.bed12.pred      transcript      629653  630206  .       +       .       gene_id "050ef887-e254-479d-bae4-d66c5fe945ee"; transcript_id "050ef887-e254-479d-bae4-d66c5fe945ee";
+1       KO-rep1.extract.bed12.pred      transcript      629653  630476  .       +       .       gene_id "43e706ae-c766-4a55-a32f-55dfba282570"; transcript_id "43e706ae-c766-4a55-a32f-55dfba282570";
 ```
