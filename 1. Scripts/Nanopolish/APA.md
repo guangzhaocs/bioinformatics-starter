@@ -13,7 +13,7 @@ samtools view -h -q 5 -F 4 -F 256 -F 2048 -Sb origin_download_bam/HEK293T-Mettl3
 ```
 bedtools bamtobed -bed12 -split -i /scratch/cs/nanopore/nanopore_modification/xpore_dataset/origin_download_fastq_bam_filter/HEK293T-Mettl3-KO-rep1.bam > KO-rep1.extract.bed12
 ```
-Examples in KO-rep1.extract.bed12 (line 21-30):
+Examples in `KO-rep1.extract.bed12` (line 21-30):
 ```
 1       186963  188245  3e590b49-2735-46ad-bf9c-e2ab39c9c8c1    34      -       186963  188245  255,0,0 3       324,198,116     0,416,1166
 1       186968  188577  4ab27082-5ff4-406d-93dd-75e1f47f59a9    6       -       186968  188577  255,0,0 5       319,202,136,137,139     0,407,786,1161,1470
