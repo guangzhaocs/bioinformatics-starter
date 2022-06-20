@@ -94,7 +94,7 @@ Examples in `KO-rep1.out.gtf`:
 1       KO-rep1.extract.bed12.pred      start_codon     629650  629652  .       +       0       gene_id "7dde27aa-6110-4f80-98b6-44a880cebe88"; transcript_id "7dde27aa-6110-4f80-98b6-44a880cebe88"; exon_number "1"; exon_id "7dde27aa-6110-4f80-98b6-44a880cebe88.1";
 ```
 
-
+### Step 5.2: filter gtf
 ```
 cat KO-rep1.out.gtf|awk -F"\t" '{if($3=="transcript"){print $0}}' > KO-rep1.out2.gtf && rm KO-rep1.out.gtf
 ```
