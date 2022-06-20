@@ -61,6 +61,8 @@ genePredToGtf "file" KO-rep1.extract.bed12.pred KO-rep1.out.gtf
 ```
 
 ```
+1       KO-rep1.extract.bed12.pred      transcript      186975  195419  .       -       .       gene_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; transcript_id "5135f71c-246c-49fa-a277-6843b8cb65a9";
+1       KO-rep1.extract.bed12.pred      exon    186975  187287  .       -       .       gene_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; transcript_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; exon_number "1"; exon_id "5135f71c-246c-49fa-a277-6843b8cb65a9.1";
 1       KO-rep1.extract.bed12.pred      CDS     186978  187287  .       -       1       gene_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; transcript_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; exon_number "1"; exon_id "5135f71c-246c-49fa-a277-6843b8cb65a9.1";
 1       KO-rep1.extract.bed12.pred      exon    187380  187577  .       -       .       gene_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; transcript_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; exon_number "2"; exon_id "5135f71c-246c-49fa-a277-6843b8cb65a9.2";
 1       KO-rep1.extract.bed12.pred      CDS     187380  187577  .       -       1       gene_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; transcript_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; exon_number "2"; exon_id "5135f71c-246c-49fa-a277-6843b8cb65a9.2";
