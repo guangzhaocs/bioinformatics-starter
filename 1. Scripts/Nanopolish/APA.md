@@ -13,6 +13,12 @@ samtools view -h -q 5 -F 4 -F 256 -F 2048 -Sb origin_download_bam/HEK293T-Mettl3
 ```
 bedtools bamtobed -bed12 -split -i origin_download_fastq_bam_filter/HEK293T-Mettl3-KO-rep1.bam > origin_download_fastq_bam_filter_to_bed/KO-rep1.extract.bed12
 ```
+bed12 format (https://bedtools.readthedocs.io/en/latest/content/general-usage.html): 
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| chrom | start | end | name | score | strand | thickStart | thickEnd | itemRGB | blockCount | blockSizes| blockStarts |
+
+
 Examples in `KO-rep1.extract.bed12` (line 21-30):
 ```
 1       186963  188245  3e590b49-2735-46ad-bf9c-e2ab39c9c8c1    34      -       186963  188245  255,0,0 3       324,198,116     0,416,1166
