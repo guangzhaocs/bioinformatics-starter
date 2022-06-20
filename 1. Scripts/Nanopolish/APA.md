@@ -136,5 +136,22 @@ Examples in `KO-rep1_pAsite_gene.txt`:
 ```
 
 
+## Step 7: extract the last site
 
+```
+bash ../script/change_vcf_name.sh a KO-rep1.out2.gtf KO-rep1.pA.gtf && rm KO-rep1.out2.gtf
+```
+Examples in `KO-rep1.pA.gtf`:
+```
+chr1    stdin   transcript      186964  188245  .       -       .       gene_id "3e590b49-2735-46ad-bf9c-e2ab39c9c8c1"; transcript_id "3e590b49-2735-46ad-bf9c-e2ab39c9c8c1";
+chr1    stdin   transcript      186969  188577  .       -       .       gene_id "4ab27082-5ff4-406d-93dd-75e1f47f59a9"; transcript_id "4ab27082-5ff4-406d-93dd-75e1f47f59a9";
+chr1    stdin   transcript      186969  195917  .       -       .       gene_id "dbc150c4-4e46-4b7e-acbd-341312d26d12"; transcript_id "dbc150c4-4e46-4b7e-acbd-341312d26d12";
+chr1    stdin   transcript      186975  195419  .       -       .       gene_id "5135f71c-246c-49fa-a277-6843b8cb65a9"; transcript_id "5135f71c-246c-49fa-a277-6843b8cb65a9";
+chr1    stdin   transcript      294877  296718  .       -       .       gene_id "ed24c30c-40d4-4060-acb8-c1533faceee9"; transcript_id "ed24c30c-40d4-4060-acb8-c1533faceee9";
+chr1    stdin   transcript      629650  629977  .       +       .       gene_id "7dde27aa-6110-4f80-98b6-44a880cebe88"; transcript_id "7dde27aa-6110-4f80-98b6-44a880cebe88";
+chr1    stdin   transcript      629650  630001  .       +       .       gene_id "5d0efd71-5d81-44bf-b65d-3dd3172a0870"; transcript_id "5d0efd71-5d81-44bf-b65d-3dd3172a0870";
+chr1    stdin   transcript      629652  689958  .       +       .       gene_id "a0990902-ef61-42d8-9405-5c8c7103b543"; transcript_id "a0990902-ef61-42d8-9405-5c8c7103b543";
+chr1    stdin   transcript      629653  630206  .       +       .       gene_id "050ef887-e254-479d-bae4-d66c5fe945ee"; transcript_id "050ef887-e254-479d-bae4-d66c5fe945ee";
+chr1    stdin   transcript      629653  630476  .       +       .       gene_id "43e706ae-c766-4a55-a32f-55dfba282570"; transcript_id "43e706ae-c766-4a55-a32f-55dfba282570";
+```
 
