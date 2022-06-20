@@ -9,6 +9,7 @@ Phrase 1: bam to gtf
 Phrase 2: extract the last site
 (Step 6) cat KO-rep1.out2.gtf| awk -F "[\t;]" '{if($7=="+"){print $1"\t"$5"\t"$9}else{print $1"\t"$4"\t"$9}}' |sed 's/gene_id//g' |sed 's/"//g' > KO-rep1_pAsite_gene.txt
 (Step 7) bash path_to_script/change_vcf_name.sh a KO-rep1.out2.gtf KO-rep1.pA.gtf && rm KO-rep1.out2.gtf
+(Step 8) cat KO-rep1.pA.gtf |awk -F "\t" '{if($7=="+"){print $1"\t"$5-1"\t"$5"\t"$2"\t"$3"\t"$7}else{print $1"\t"$4-1"\t"$4"\t"$2"\t"$3"\t"$7}}' > KO-rep1.pA.bed
 ```
 
 ## Step 1: minimap2
@@ -154,5 +155,24 @@ chr1    stdin   transcript      629650  630001  .       +       .       gene_id 
 chr1    stdin   transcript      629652  689958  .       +       .       gene_id "a0990902-ef61-42d8-9405-5c8c7103b543"; transcript_id "a0990902-ef61-42d8-9405-5c8c7103b543";
 chr1    stdin   transcript      629653  630206  .       +       .       gene_id "050ef887-e254-479d-bae4-d66c5fe945ee"; transcript_id "050ef887-e254-479d-bae4-d66c5fe945ee";
 chr1    stdin   transcript      629653  630476  .       +       .       gene_id "43e706ae-c766-4a55-a32f-55dfba282570"; transcript_id "43e706ae-c766-4a55-a32f-55dfba282570";
+
+```
+## Step 8: 
+
+```
+cat KO-rep1.pA.gtf |awk -F "\t" '{if($7=="+"){print $1"\t"$5-1"\t"$5"\t"$2"\t"$3"\t"$7}else{print $1"\t"$4-1"\t"$4"\t"$2"\t"$3"\t"$7}}' > KO-rep1.pA.bed
+```
+Examples in `KO-rep1.pA.bed`:
+```
+chr1    186963  186964  stdin   transcript      -
+chr1    186968  186969  stdin   transcript      -
+chr1    186968  186969  stdin   transcript      -
+chr1    186974  186975  stdin   transcript      -
+chr1    294876  294877  stdin   transcript      -
+chr1    629976  629977  stdin   transcript      +
+chr1    630000  630001  stdin   transcript      +
+chr1    689957  689958  stdin   transcript      +
+chr1    630205  630206  stdin   transcript      +
+chr1    630475  630476  stdin   transcript      +
 ```
 
