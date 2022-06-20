@@ -7,7 +7,8 @@ Phrase 1: bam to gtf
 (Step 5.2) cat KO-rep1.out.gtf|awk -F"\t" '{if($3=="transcript"){print $0}}' > KO-rep1.out2.gtf && rm KO-rep1.out.gtf
 
 Phrase 2: extract the last site
-(Step 6) cat gene_out2.gtf| awk -F "[\t;]" '{if($7=="+"){print $1"\t"$5"\t"$9}else{print $1"\t"$4"\t"$9}}' |sed 's/gene_id//g' |sed 's/"//g' > pAsite_gene.txt
+(Step 6) cat KO-rep1.out2.gtf| awk -F "[\t;]" '{if($7=="+"){print $1"\t"$5"\t"$9}else{print $1"\t"$4"\t"$9}}' |sed 's/gene_id//g' |sed 's/"//g' > KO-rep1_pAsite_gene.txt
+(Step 7) bash path_to_script/change_vcf_name.sh a KO-rep1.out2.gtf KO-rep1.pA.gtf && rm KO-rep1.out2.gtf
 ```
 
 ## Step 1: minimap2
@@ -136,10 +137,10 @@ Examples in `KO-rep1_pAsite_gene.txt`:
 ```
 
 
-## Step 7: extract the last site
+## Step 7: change vcf name
 
 ```
-bash ../script/change_vcf_name.sh a KO-rep1.out2.gtf KO-rep1.pA.gtf && rm KO-rep1.out2.gtf
+bash path_to_script/change_vcf_name.sh a KO-rep1.out2.gtf KO-rep1.pA.gtf && rm KO-rep1.out2.gtf
 ```
 Examples in `KO-rep1.pA.gtf`:
 ```
