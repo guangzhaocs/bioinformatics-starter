@@ -111,3 +111,26 @@ Examples in `KO-rep1.out2.gtf`:
 1       KO-rep1.extract.bed12.pred      transcript      629653  630206  .       +       .       gene_id "050ef887-e254-479d-bae4-d66c5fe945ee"; transcript_id "050ef887-e254-479d-bae4-d66c5fe945ee";
 1       KO-rep1.extract.bed12.pred      transcript      629653  630476  .       +       .       gene_id "43e706ae-c766-4a55-a32f-55dfba282570"; transcript_id "43e706ae-c766-4a55-a32f-55dfba282570";
 ```
+
+## Step 6: extract the last site
+```
+cat KO-rep1.out2.gtf| awk -F "[\t;]" '{if($7=="+"){print $1"\t"$5"\t"$9}else{print $1"\t"$4"\t"$9}}' |sed 's/gene_id//g' |sed 's/"//g' > KO-rep1_pAsite_gene.txt
+```
+
+Examples in `KO-rep1_pAsite_gene.txt`:
+```
+1       186964   3e590b49-2735-46ad-bf9c-e2ab39c9c8c1
+1       186969   4ab27082-5ff4-406d-93dd-75e1f47f59a9
+1       186969   dbc150c4-4e46-4b7e-acbd-341312d26d12
+1       186975   5135f71c-246c-49fa-a277-6843b8cb65a9
+1       294877   ed24c30c-40d4-4060-acb8-c1533faceee9
+1       629977   7dde27aa-6110-4f80-98b6-44a880cebe88
+1       630001   5d0efd71-5d81-44bf-b65d-3dd3172a0870
+1       689958   a0990902-ef61-42d8-9405-5c8c7103b543
+1       630206   050ef887-e254-479d-bae4-d66c5fe945ee
+1       630476   43e706ae-c766-4a55-a32f-55dfba282570
+```
+
+
+
+
