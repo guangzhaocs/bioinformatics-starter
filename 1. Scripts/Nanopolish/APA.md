@@ -1,16 +1,5 @@
 
-## Overview
-```
-Phrase 1: bam to gtf
-(Step 2) samtools view -h -q 5 -F 4 -F 256 -F 2048 -Sb HEK293T-Mettl3-KO-rep1.bam > HEK293T-Mettl3-KO-rep1.filter.bam
-(Step 3-5.1) bedtools bamtobed -bed12 -split -i HEK293T-Mettl3-KO-rep1.filter.bam|bedToGenePred /dev/stdin /dev/stdout|genePredToGtf "file" stdin KO-rep1.out.gtf
-(Step 5.2) cat KO-rep1.out.gtf|awk -F"\t" '{if($3=="transcript"){print $0}}' > KO-rep1.out2.gtf && rm KO-rep1.out.gtf
 
-Phrase 2: extract the last site
-(Step 6) cat KO-rep1.out2.gtf| awk -F "[\t;]" '{if($7=="+"){print $1"\t"$5"\t"$9}else{print $1"\t"$4"\t"$9}}' |sed 's/gene_id//g' |sed 's/"//g' > KO-rep1_pAsite_gene.txt
-(Step 7) bash path_to_script/change_vcf_name.sh a KO-rep1.out2.gtf KO-rep1.pA.gtf && rm KO-rep1.out2.gtf
-(Step 8) cat KO-rep1.pA.gtf |awk -F "\t" '{if($7=="+"){print $1"\t"$5-1"\t"$5"\t"$2"\t"$3"\t"$7}else{print $1"\t"$4-1"\t"$4"\t"$2"\t"$3"\t"$7}}' > KO-rep1.pA.bed
-```
 
 ## Step 1: minimap2
 
@@ -184,3 +173,20 @@ sort -k1,1 -k2,2n KO-rep1.pA.bed > KO-rep1.pA.sorted.bed
 ```
 intersectBed -a pA.sorted.bed -b path_to_reference/metaplotR/hg38/hg38_annot.sorted.bed -sorted -wo -s > annot_pA.sorted.bed
 ```
+
+## Step 11: rel_and_abs_dist_calc
+```
+perl path_to_metaPlotR/rel_and_abs_dist_calc.pl --bed annot_pA.sorted.bed --regions path_to_reference/metaplotR/hg38/region_sizes.txt > annot_pA.dist.measures.txt
+```
+
+## Step 12: delete
+只保留3'UTR的pA位点,所以我们这里删掉pA位点的rel_location 0-2的位点。注意后续对应的位点也应该删除
+```
+cat annot_pA.dist.measures.txt|awk -F "\t" '{if($5 >= 2.0) print $0}' > annot_pA.dist.measures_only3utr.txt && rm annot_pA.dist.measures.txt
+```
+
+## Step 13: change vcf name
+```
+bash path_to_script/change_vcf_name.sh r annot_pA.dist.measures_only3utr.txt annot_pA.dist.measures_only3utr_nochr.txt 
+```
+
