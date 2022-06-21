@@ -157,7 +157,7 @@ chr1    stdin   transcript      629653  630206  .       +       .       gene_id 
 chr1    stdin   transcript      629653  630476  .       +       .       gene_id "43e706ae-c766-4a55-a32f-55dfba282570"; transcript_id "43e706ae-c766-4a55-a32f-55dfba282570";
 
 ```
-## Step 8: 
+## Step 8: select 
 
 ```
 cat KO-rep1.pA.gtf |awk -F "\t" '{if($7=="+"){print $1"\t"$5-1"\t"$5"\t"$2"\t"$3"\t"$7}else{print $1"\t"$4-1"\t"$4"\t"$2"\t"$3"\t"$7}}' > KO-rep1.pA.bed
@@ -175,4 +175,11 @@ chr1    689957  689958  stdin   transcript      +
 chr1    630205  630206  stdin   transcript      +
 chr1    630475  630476  stdin   transcript      +
 ```
-
+## Step 9: sort
+```
+sort -k1,1 -k2,2n KO-rep1.pA.bed > KO-rep1.pA.sorted.bed
+```
+## Step 10: intersectBed
+```
+intersectBed
+```
