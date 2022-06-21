@@ -47,6 +47,7 @@ Examples in `KO-rep1.extract.bed12` (line 21-30):
 
 ## Step 4: bedToGenePred
 Convert the relative position to absolute position. 
+
 `bedToGenePred` source code : https://github.com/ENCODE-DCC/kentUtils/blob/master/src/utils/bedToGenePred/bedToGenePred
 ```
 cd ..
