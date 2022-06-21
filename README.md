@@ -5,7 +5,7 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 
 ## 1. Software Installation
 
-nanopolish[https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0.%20Software%20Installation/Nanopolish.md]
+[nanopolish](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0.%20Software%20Installation/Nanopolish.md)
 
 
 ## 2. Nanopolish eventalign
