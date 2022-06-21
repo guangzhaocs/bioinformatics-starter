@@ -3,12 +3,12 @@
 This blog introduces the Bioinformatics Software Installation, the srcipts of Bioinformatics processing, and so on.
 
 
-## 1. Software Installation
+## Software Installation
 
-[nanopolish](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0.%20Software%20Installation/Nanopolish.md)
+- [nanopolish](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0.%20Software%20Installation/Nanopolish.md)
+- [tombo](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0.%20Software%20Installation/Tombo.md)
 
-
-## 2. Nanopolish eventalign
+## Srcipts
 
 ```
 nanopolish eventalign \
