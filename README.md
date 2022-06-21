@@ -1,6 +1,6 @@
 # Quickstart: Travel to Bioinformatics
 
-This blog introduces the Bioinformatics Software Installation, the srcipts of Bioinformatics processing, and ...
+This blog introduces the Bioinformatics Software Installation, the srcipts of Bioinformatics processing, and so on.
 
 
 ## 1. Software Installation
