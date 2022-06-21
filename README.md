@@ -1,5 +1,6 @@
-# Nanopore Data Process
-This blog introduces the Nanopore data processing including reading data from fast5, fastq or fasta files, the process of Guppy, Tombo, Nanopolish and so on.
+# Quickstart: Travel to Bioinformatics
+
+This blog introduces the Bioinformatics Software Installation, the srcipts of Bioinformatics processing, and ...
 
 
 ## 1. Software Installation
