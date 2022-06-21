@@ -182,5 +182,5 @@ sort -k1,1 -k2,2n KO-rep1.pA.bed > KO-rep1.pA.sorted.bed
 ```
 ## Step 10: intersectBed
 ```
-intersectBed
+intersectBed -a pA.sorted.bed -b path_to_reference/metaplotR/hg38/hg38_annot.sorted.bed -sorted -wo -s > annot_pA.sorted.bed
 ```
