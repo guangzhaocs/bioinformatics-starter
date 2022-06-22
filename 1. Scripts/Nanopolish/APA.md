@@ -149,6 +149,8 @@ chr1    stdin   transcript      629653  630476  .       +       .       gene_id 
 ```
 ## Step 8: select 
 
+m6a.bed为6列的bedfile, 第一列是染色体，第二列是site-1, 第三列是site, 4,5列随意，第六列是strand。tab分割，注意位置是tab分割。metaplotR是0 based， 我们的是1-based，所以我们的数减1作为metaplotR的第二列。
+
 ```
 cat KO-rep1.pA.gtf |awk -F "\t" '{if($7=="+"){print $1"\t"$5-1"\t"$5"\t"$2"\t"$3"\t"$7}else{print $1"\t"$4-1"\t"$4"\t"$2"\t"$3"\t"$7}}' > KO-rep1.pA.bed
 ```
@@ -165,69 +167,111 @@ chr1    689957  689958  stdin   transcript      +
 chr1    630205  630206  stdin   transcript      +
 chr1    630475  630476  stdin   transcript      +
 ```
-## Step 9: sort
+
+## Step 9: intersectBed
 ```
-sort -k1,1 -k2,2n KO-rep1.pA.bed > KO-rep1.pA.sorted.bed
-```
-## Step 10: intersectBed
-```
+sort -k1,1 -k2,2n KO-rep1.pA.bed > pA.sorted.bed
 intersectBed -a pA.sorted.bed -b path_to_reference/metaplotR/hg38/hg38_annot.sorted.bed -sorted -wo -s > annot_pA.sorted.bed
 ```
 
 Examples in `hg38_annot.sorted.bed`:
 ```
-chr1    17368   17369   ENST00000619216.1|MIR6859-1|ncRNA|68    C       -
-chr1    17369   17370   ENST00000619216.1|MIR6859-1|ncRNA|67    T       -
-chr1    17370   17371   ENST00000619216.1|MIR6859-1|ncRNA|66    A       -
-chr1    17371   17372   ENST00000619216.1|MIR6859-1|ncRNA|65    C       -
-chr1    17372   17373   ENST00000619216.1|MIR6859-1|ncRNA|64    A       -
-chr1    17373   17374   ENST00000619216.1|MIR6859-1|ncRNA|63    G       -
-chr1    17374   17375   ENST00000619216.1|MIR6859-1|ncRNA|62    A       -
-chr1    17375   17376   ENST00000619216.1|MIR6859-1|ncRNA|61    G       -
-chr1    17376   17377   ENST00000619216.1|MIR6859-1|ncRNA|60    G       -
-chr1    17377   17378   ENST00000619216.1|MIR6859-1|ncRNA|59    C       -
+chr1    17431   17432   ENST00000619216.1|MIR6859-1|ncRNA|5     C       -
+chr1    17432   17433   ENST00000619216.1|MIR6859-1|ncRNA|4     C       -
+chr1    17433   17434   ENST00000619216.1|MIR6859-1|ncRNA|3     A       -
+chr1    17434   17435   ENST00000619216.1|MIR6859-1|ncRNA|2     C       -
+chr1    17435   17436   ENST00000619216.1|MIR6859-1|ncRNA|1     A       -
+chr1    29553   29554   ENST00000473358.1|MIR1302-2HG|ncRNA|1   G       +
+chr1    29554   29555   ENST00000473358.1|MIR1302-2HG|ncRNA|2   T       +
+chr1    29555   29556   ENST00000473358.1|MIR1302-2HG|ncRNA|3   G       +
+chr1    29556   29557   ENST00000473358.1|MIR1302-2HG|ncRNA|4   C       +
+chr1    29557   29558   ENST00000473358.1|MIR1302-2HG|ncRNA|5   A       +
 ```
 
 Exapmles in `pA.sorted.bed`:
 ```
-chr1    14396   14397   stdin   transcript      -
-chr1    14403   14404   stdin   transcript      -
-chr1    14403   14404   stdin   transcript      -
-chr1    14403   14404   stdin   transcript      -
-chr1    14403   14404   stdin   transcript      -
-chr1    14410   14411   stdin   transcript      -
-chr1    16441   16442   stdin   transcript      -
-chr1    16441   16442   stdin   transcript      -
-chr1    16442   16443   stdin   transcript      -
-chr1    16446   16447   stdin   transcript      -
+chr1    186963  186964  stdin   transcript      -
+chr1    186968  186969  stdin   transcript      -
+chr1    186968  186969  stdin   transcript      -
+chr1    186974  186975  stdin   transcript      -
+chr1    294876  294877  stdin   transcript      -
+chr1    629971  629972  stdin   transcript      +
+chr1    629976  629977  stdin   transcript      +
+chr1    630000  630001  stdin   transcript      +
+chr1    630024  630025  stdin   transcript      +
+chr1    630094  630095  stdin   transcript      +
 ```
 
-Examples in `annot_pA.sorted.bed`:
+Examples in `annot_pA.sorted.bed`: (同一个位点可能会map到不同的转录本上)
 ```
-chr1    810059  810060  stdin   transcript      +       chr1    810059  810060  ENST00000670700.1|LINC01409|ncRNA|1376  A       +       1
-chr1    826205  826206  stdin   transcript      -       chr1    826205  826206  ENST00000473798.1|LINC00115|ncRNA|1317  T       -       1
-chr1    841997  841998  stdin   transcript      +       chr1    841997  841998  ENST00000670780.1|LINC01128|ncRNA|1073  T       +       1
-chr1    842000  842001  stdin   transcript      +       chr1    842000  842001  ENST00000670780.1|LINC01128|ncRNA|1076  A       +       1
-chr1    842000  842001  stdin   transcript      +       chr1    842000  842001  ENST00000670780.1|LINC01128|ncRNA|1076  A       +       1
-chr1    843590  843591  stdin   transcript      +       chr1    843590  843591  ENST00000670780.1|LINC01128|ncRNA|2666  A       +       1
-chr1    844373  844374  stdin   transcript      +       chr1    844373  844374  ENST00000670780.1|LINC01128|ncRNA|3449  G       +       1
-chr1    854084  854085  stdin   transcript      +       chr1    854084  854085  ENST00000445118.7|LINC01128|ncRNA|1255  C       +       1
-chr1    854084  854085  stdin   transcript      +       chr1    854084  854085  ENST00000608189.5|LINC01128|ncRNA|1642  C       +       1
-chr1    854084  854085  stdin   transcript      +       chr1    854084  854085  ENST00000609009.6|LINC01128|ncRNA|1632  C       +       1
+chr1    942634  942635  stdin   transcript      +       chr1    942634  942635  ENST00000342066.8|SAMD11|cds|1231       G       +       1
+chr1    942634  942635  stdin   transcript      +       chr1    942634  942635  ENST00000616016.5|SAMD11|cds|2139       G       +       1
+chr1    942634  942635  stdin   transcript      +       chr1    942634  942635  ENST00000618323.5|SAMD11|cds|2142       G       +       1
+chr1    944018  944019  stdin   transcript      +       chr1    944018  944019  ENST00000342066.8|SAMD11|cds|2002       C       +       1
+chr1    944018  944019  stdin   transcript      +       chr1    944018  944019  ENST00000616016.5|SAMD11|cds|2910       C       +       1
+chr1    944018  944019  stdin   transcript      +       chr1    944018  944019  ENST00000618323.5|SAMD11|cds|2913       C       +       1
+chr1    944103  944104  stdin   transcript      +       chr1    944103  944104  ENST00000342066.8|SAMD11|cds|2087       C       +       1
+chr1    944103  944104  stdin   transcript      +       chr1    944103  944104  ENST00000616016.5|SAMD11|cds|2995       C       +       1
+chr1    944103  944104  stdin   transcript      +       chr1    944103  944104  ENST00000618323.5|SAMD11|cds|2998       C       +       1
+chr1    944202  944203  stdin   transcript      -       chr1    944202  944203  ENST00000327044.7|NOC2L|3utr|2757       T       -       1
+chr1    944202  944203  stdin   transcript      -       chr1    944202  944203  ENST00000327044.7|NOC2L|3utr|2757       T       -       1
+chr1    944202  944203  stdin   transcript      -       chr1    944202  944203  ENST00000327044.7|NOC2L|3utr|2757       T       -       1
+chr1    944202  944203  stdin   transcript      -       chr1    944202  944203  ENST00000327044.7|NOC2L|3utr|2757       T       -       1
+chr1    944202  944203  stdin   transcript      -       chr1    944202  944203  ENST00000327044.7|NOC2L|3utr|2757       T       -       1
+chr1    944202  944203  stdin   transcript      -       chr1    944202  944203  ENST00000327044.7|NOC2L|3utr|2757       T       -       1
+chr1    944202  944203  stdin   transcript      -       chr1    944202  944203  ENST00000327044.7|NOC2L|3utr|2757       T       -       1
 ```
 
-## Step 11: rel_and_abs_dist_calc
+```
+chr1    1217070 1217071 stdin   transcript      -       chr1    1217070 1217071 ENST00000360001.12|SDF4|3utr|1793       T       -       1
+chr1    1217070 1217071 stdin   transcript      -       chr1    1217070 1217071 ENST00000660930.1|SDF4|3utr|1975        T       -       1
+chr1    1217070 1217071 stdin   transcript      -       chr1    1217070 1217071 ENST00000263741.12|SDF4|3utr|1939       T       -       1
+chr1    1217070 1217071 stdin   transcript      -       chr1    1217070 1217071 ENST00000360001.12|SDF4|3utr|1793       T       -       1
+chr1    1217070 1217071 stdin   transcript      -       chr1    1217070 1217071 ENST00000660930.1|SDF4|3utr|1975        T       -       1
+chr1    1217082 1217083 stdin   transcript      -       chr1    1217082 1217083 ENST00000263741.12|SDF4|3utr|1927       T       -       1
+chr1    1217082 1217083 stdin   transcript      -       chr1    1217082 1217083 ENST00000360001.12|SDF4|3utr|1781       T       -       1
+chr1    1217082 1217083 stdin   transcript      -       chr1    1217082 1217083 ENST00000660930.1|SDF4|3utr|1963        T       -       1
+chr1    1217086 1217087 stdin   transcript      -       chr1    1217086 1217087 ENST00000263741.12|SDF4|3utr|1923       A       -       1
+chr1    1217086 1217087 stdin   transcript      -       chr1    1217086 1217087 ENST00000360001.12|SDF4|3utr|1777       A       -       1
+chr1    1217086 1217087 stdin   transcript      -       chr1    1217086 1217087 ENST00000660930.1|SDF4|3utr|1959        A       -       1
+chr1    1217427 1217428 stdin   transcript      -       chr1    1217427 1217428 ENST00000263741.12|SDF4|3utr|1582       G       -       1
+chr1    1217427 1217428 stdin   transcript      -       chr1    1217427 1217428 ENST00000360001.12|SDF4|3utr|1436       G       -       1
+chr1    1217427 1217428 stdin   transcript      -       chr1    1217427 1217428 ENST00000660930.1|SDF4|3utr|1618        G       -       1
+chr1    1228627 1228628 stdin   transcript      -       chr1    1228627 1228628 ENST00000263741.12|SDF4|cds|459 T       -       1
+chr1    1228627 1228628 stdin   transcript      -       chr1    1228627 1228628 ENST00000360001.12|SDF4|cds|429 T       -       1
+chr1    1228627 1228628 stdin   transcript      -       chr1    1228627 1228628 ENST00000660930.1|SDF4|cds|495  T       -       1
+chr1    1228630 1228631 stdin   transcript      -       chr1    1228630 1228631 ENST00000263741.12|SDF4|cds|456 C       -       1
+chr1    1228630 1228631 stdin   transcript      -       chr1    1228630 1228631 ENST00000360001.12|SDF4|cds|426 C       -       1
+chr1    1228630 1228631 stdin   transcript      -       chr1    1228630 1228631 ENST00000660930.1|SDF4|cds|492  C       -       1
+```
+
+## Step 10: rel_and_abs_dist_calc
 ```
 perl path_to_metaPlotR/rel_and_abs_dist_calc.pl --bed annot_pA.sorted.bed --regions path_to_reference/metaplotR/hg38/region_sizes.txt > annot_pA.dist.measures.txt
 ```
+Exampls in `annot_pA.dist.measures.txt`:
+```
+chr     coord   gene_name       refseqID        rel_location    utr5_st utr5_end        cds_st  cds_end utr3_st utr3_end        utr5_size       cds_size   utr3_size
+chr1    942635  SAMD11  ENST00000342066.8       1.55767350928641        1230    1141    1140    -905    -906    -1326   89      2045    420
+chr1    942635  SAMD11  ENST00000616016.5       1.64299802761341        2138    1630    1629    -905    -906    -1326   508     2534    420
+chr1    942635  SAMD11  ENST00000618323.5       1.64342001576044        2141    1633    1632    -905    -906    -1326   508     2537    420
+chr1    944019  SAMD11  ENST00000342066.8       1.93450635386119        2001    1912    1911    -134    -135    -555    89      2045    420
+chr1    944019  SAMD11  ENST00000616016.5       1.94714003944773        2909    2401    2400    -134    -135    -555    508     2534    420
+chr1    944019  SAMD11  ENST00000618323.5       1.94720252167061        2912    2404    2403    -134    -135    -555    508     2537    420
+chr1    944104  SAMD11  ENST00000342066.8       1.97605083088954        2086    1997    1996    -49     -50     -470    89      2045    420
+chr1    944104  SAMD11  ENST00000616016.5       1.98067061143984        2994    2486    2485    -49     -50     -470    508     2534    420
+chr1    944104  SAMD11  ENST00000618323.5       1.98069345941686        2997    2489    2488    -49     -50     -470    508     2537    420
+```
 
-## Step 12: delete
+## Step 11: delete
 只保留3'UTR的pA位点,所以我们这里删掉pA位点的rel_location 0-2的位点。注意后续对应的位点也应该删除
 ```
 cat annot_pA.dist.measures.txt|awk -F "\t" '{if($5 >= 2.0) print $0}' > annot_pA.dist.measures_only3utr.txt && rm annot_pA.dist.measures.txt
 ```
 
-## Step 13: change vcf name
+
+
+## Step 12: change vcf name
 ```
 bash path_to_script/change_vcf_name.sh r annot_pA.dist.measures_only3utr.txt annot_pA.dist.measures_only3utr_nochr.txt 
 ```
