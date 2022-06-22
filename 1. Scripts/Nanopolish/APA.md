@@ -261,16 +261,16 @@ ENST00000616016.5	SAMD11	3465	1	509	510	3044	3045	3465
 ENST00000618323.5	SAMD11	3468	1	509	510	3047	3048	3468
 ```
 
-| 5UTR        | CDS           | 3 UTR  |
+| 5 UTR        | CDS           | 3 UTR  |
 | :-------------: |:-------------:|:-------------: |
-|1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 90| 91 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2136 | 2137 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2557 |
+|1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 90| 91 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2136 | 2137 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2557 |
 
 ```
 ENST00000327044.7	NOC2L	2757	1	16	17	2266	2267	2757
 ```
-| 5UTR        | CDS           | 3 UTR  |
+| 5 UTR        | CDS           | 3 UTR  |
 | :-------------: |:-------------:|:-------------: |
-|1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 16| 17 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2266 | 2267 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2757 |
+|1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 16| 17 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2266 | 2267 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2757 |
 
 Examples in `annot_pA.dist.measures.txt`:
 ```
