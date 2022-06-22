@@ -256,14 +256,14 @@ perl path_to_metaPlotR/rel_and_abs_dist_calc.pl --bed annot_pA.sorted.bed --regi
 ```
 Examples in `region_sizes.txt`:
 ```
-ENST00000616016.5	SAMD11	3465	1	509	510	3044	3045	3465
 ENST00000342066.8	SAMD11	2557	1	90	91	2136	2137	2557
+ENST00000616016.5	SAMD11	3465	1	509	510	3044	3045	3465
 ENST00000618323.5	SAMD11	3468	1	509	510	3047	3048	3468
 ```
 
 | 5UTR        | CDS           | 3 UTR  |
 | :-------------: |:-------------:| -----:|
-|1&nbsp; &nbsp; &nbsp;90| right-aligned | $1600 |
+|1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 90| 91 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2136 | 2137 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2557 |
 
 
 Examples in `annot_pA.dist.measures.txt`:
