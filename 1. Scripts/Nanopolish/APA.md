@@ -254,7 +254,7 @@ chr1    1228630 1228631 stdin   transcript      -       chr1    1228630 1228631 
 ```
 perl path_to_metaPlotR/rel_and_abs_dist_calc.pl --bed annot_pA.sorted.bed --regions path_to_reference/metaplotR/hg38/region_sizes.txt > annot_pA.dist.measures.txt
 ```
-Examples in `region_sizes.txt`:
+Examples in `region_sizes.txt`: (gene `SAMD11` is in the strand `+` while gene `NOC2L` is in the strand `-`)
 ```
 ENST00000342066.8	SAMD11	2557	1	90	91	2136	2137	2557
 ENST00000616016.5	SAMD11	3465	1	509	510	3044	3045	3465
@@ -268,7 +268,9 @@ ENST00000618323.5	SAMD11	3468	1	509	510	3047	3048	3468
 ```
 ENST00000327044.7	NOC2L	2757	1	16	17	2266	2267	2757
 ```
-
+| 5UTR        | CDS           | 3 UTR  |
+| :-------------: |:-------------:|:-------------: |
+|1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 16| 17 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2266 | 2267 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2757 |
 
 Examples in `annot_pA.dist.measures.txt`:
 ```
