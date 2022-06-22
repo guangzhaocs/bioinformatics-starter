@@ -247,23 +247,18 @@ chr1    1228630 1228631 stdin   transcript      -       chr1    1228630 1228631 
 
 ## Step 10: rel_and_abs_dist_calc
 
-[metaPlotR code](https://github.com/olarerin/metaPlotR/blob/master/rel_and_abs_dist_calc.pl)
+`rel_and_abs_dist_calc.pl` identifies the region of the transcript in which the user supplied sites fall and converts the transcriptomic coordinates to metagene coordinates. Namely, sites that occur in the 5’UTR have a value from 0 to 1, where 0 and 1 represent the 5’ and 3’ ends of the 5’UTR, respectively. Similarly, sites in the CDS have a value from 1 to 2 and the 3’UTR 2 to 3.
+
+[metaPlotR source code](https://github.com/olarerin/metaPlotR/blob/master/rel_and_abs_dist_calc.pl)
 
 ```
 perl path_to_metaPlotR/rel_and_abs_dist_calc.pl --bed annot_pA.sorted.bed --regions path_to_reference/metaplotR/hg38/region_sizes.txt > annot_pA.dist.measures.txt
 ```
 Examples in `region_sizes.txt`:
 ```
-ENST00000387314.1       MT-TF   71      NA      NA      NA      NA      NA      NA
-ENST00000421627.7       DLGAP2  3165    NA      NA      1       3165    NA      NA
-ENST00000405109.5       KBTBD12 5727    1       467     468     2339    2340    5727
-ENST00000640406.1       CSTB    2354    1       49      50      301     302     2354
-ENST00000536616.5       MORN5   596     1       65      66      356     357     596
-ENST00000614289.1       RP4-668E10.4    2218    NA      NA      NA      NA      NA      NA
-ENST00000521965.1       CTC-455F18.1    602     NA      NA      NA      NA      NA      NA
-ENST00000567134.5       SNUPN   1641    1       283     284     1366    1367    1641
-ENST00000516473.1       RNU6-1089P      104     NA      NA      NA      NA      NA      NA
-ENST00000668606.1       RP11-529E10.13  584     NA      NA      NA      NA      NA      NA
+ENST00000616016.5	SAMD11	3465	1	509	510	3044	3045	3465
+ENST00000342066.8	SAMD11	2557	1	90	91	2136	2137	2557
+ENST00000618323.5	SAMD11	3468	1	509	510	3047	3048	3468
 ```
 
 Examples in `annot_pA.dist.measures.txt`:
