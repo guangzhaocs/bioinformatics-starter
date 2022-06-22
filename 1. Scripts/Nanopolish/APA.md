@@ -246,10 +246,27 @@ chr1    1228630 1228631 stdin   transcript      -       chr1    1228630 1228631 
 ```
 
 ## Step 10: rel_and_abs_dist_calc
+
+[metaPlotR code](https://github.com/olarerin/metaPlotR/blob/master/rel_and_abs_dist_calc.pl)
+
 ```
 perl path_to_metaPlotR/rel_and_abs_dist_calc.pl --bed annot_pA.sorted.bed --regions path_to_reference/metaplotR/hg38/region_sizes.txt > annot_pA.dist.measures.txt
 ```
-Exampls in `annot_pA.dist.measures.txt`:
+Examples in `region_sizes.txt`:
+```
+ENST00000387314.1       MT-TF   71      NA      NA      NA      NA      NA      NA
+ENST00000421627.7       DLGAP2  3165    NA      NA      1       3165    NA      NA
+ENST00000405109.5       KBTBD12 5727    1       467     468     2339    2340    5727
+ENST00000640406.1       CSTB    2354    1       49      50      301     302     2354
+ENST00000536616.5       MORN5   596     1       65      66      356     357     596
+ENST00000614289.1       RP4-668E10.4    2218    NA      NA      NA      NA      NA      NA
+ENST00000521965.1       CTC-455F18.1    602     NA      NA      NA      NA      NA      NA
+ENST00000567134.5       SNUPN   1641    1       283     284     1366    1367    1641
+ENST00000516473.1       RNU6-1089P      104     NA      NA      NA      NA      NA      NA
+ENST00000668606.1       RP11-529E10.13  584     NA      NA      NA      NA      NA      NA
+```
+
+Examples in `annot_pA.dist.measures.txt`:
 ```
 chr     coord   gene_name       refseqID        rel_location    utr5_st utr5_end        cds_st  cds_end utr3_st utr3_end        utr5_size       cds_size   utr3_size
 chr1    942635  SAMD11  ENST00000342066.8       1.55767350928641        1230    1141    1140    -905    -906    -1326   89      2045    420
