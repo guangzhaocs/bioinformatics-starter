@@ -261,6 +261,11 @@ ENST00000342066.8	SAMD11	2557	1	90	91	2136	2137	2557
 ENST00000618323.5	SAMD11	3468	1	509	510	3047	3048	3468
 ```
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+|1            90| right-aligned | $1600 |
+
+
 Examples in `annot_pA.dist.measures.txt`:
 ```
 chr     coord   gene_name       refseqID        rel_location    utr5_st utr5_end        cds_st  cds_end utr3_st utr3_end        utr5_size       cds_size   utr3_size
