@@ -174,6 +174,48 @@ sort -k1,1 -k2,2n KO-rep1.pA.bed > KO-rep1.pA.sorted.bed
 intersectBed -a pA.sorted.bed -b path_to_reference/metaplotR/hg38/hg38_annot.sorted.bed -sorted -wo -s > annot_pA.sorted.bed
 ```
 
+Examples in `hg38_annot.sorted.bed`:
+```
+chr1    17368   17369   ENST00000619216.1|MIR6859-1|ncRNA|68    C       -
+chr1    17369   17370   ENST00000619216.1|MIR6859-1|ncRNA|67    T       -
+chr1    17370   17371   ENST00000619216.1|MIR6859-1|ncRNA|66    A       -
+chr1    17371   17372   ENST00000619216.1|MIR6859-1|ncRNA|65    C       -
+chr1    17372   17373   ENST00000619216.1|MIR6859-1|ncRNA|64    A       -
+chr1    17373   17374   ENST00000619216.1|MIR6859-1|ncRNA|63    G       -
+chr1    17374   17375   ENST00000619216.1|MIR6859-1|ncRNA|62    A       -
+chr1    17375   17376   ENST00000619216.1|MIR6859-1|ncRNA|61    G       -
+chr1    17376   17377   ENST00000619216.1|MIR6859-1|ncRNA|60    G       -
+chr1    17377   17378   ENST00000619216.1|MIR6859-1|ncRNA|59    C       -
+```
+
+Exapmles in `pA.sorted.bed`:
+```
+chr1    14396   14397   stdin   transcript      -
+chr1    14403   14404   stdin   transcript      -
+chr1    14403   14404   stdin   transcript      -
+chr1    14403   14404   stdin   transcript      -
+chr1    14403   14404   stdin   transcript      -
+chr1    14410   14411   stdin   transcript      -
+chr1    16441   16442   stdin   transcript      -
+chr1    16441   16442   stdin   transcript      -
+chr1    16442   16443   stdin   transcript      -
+chr1    16446   16447   stdin   transcript      -
+```
+
+Examples in `annot_pA.sorted.bed`:
+```
+chr1    810059  810060  stdin   transcript      +       chr1    810059  810060  ENST00000670700.1|LINC01409|ncRNA|1376  A       +       1
+chr1    826205  826206  stdin   transcript      -       chr1    826205  826206  ENST00000473798.1|LINC00115|ncRNA|1317  T       -       1
+chr1    841997  841998  stdin   transcript      +       chr1    841997  841998  ENST00000670780.1|LINC01128|ncRNA|1073  T       +       1
+chr1    842000  842001  stdin   transcript      +       chr1    842000  842001  ENST00000670780.1|LINC01128|ncRNA|1076  A       +       1
+chr1    842000  842001  stdin   transcript      +       chr1    842000  842001  ENST00000670780.1|LINC01128|ncRNA|1076  A       +       1
+chr1    843590  843591  stdin   transcript      +       chr1    843590  843591  ENST00000670780.1|LINC01128|ncRNA|2666  A       +       1
+chr1    844373  844374  stdin   transcript      +       chr1    844373  844374  ENST00000670780.1|LINC01128|ncRNA|3449  G       +       1
+chr1    854084  854085  stdin   transcript      +       chr1    854084  854085  ENST00000445118.7|LINC01128|ncRNA|1255  C       +       1
+chr1    854084  854085  stdin   transcript      +       chr1    854084  854085  ENST00000608189.5|LINC01128|ncRNA|1642  C       +       1
+chr1    854084  854085  stdin   transcript      +       chr1    854084  854085  ENST00000609009.6|LINC01128|ncRNA|1632  C       +       1
+```
+
 ## Step 11: rel_and_abs_dist_calc
 ```
 perl path_to_metaPlotR/rel_and_abs_dist_calc.pl --bed annot_pA.sorted.bed --regions path_to_reference/metaplotR/hg38/region_sizes.txt > annot_pA.dist.measures.txt
