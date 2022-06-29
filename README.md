@@ -5,8 +5,8 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 
 ## Software Installation
 
-- [nanopolish](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0.%20Software%20Installation/Nanopolish.md)
-- [tombo](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0.%20Software%20Installation/Tombo.md)
+- [nanopolish](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/3_Nanopolish.md)
+- [tombo](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/4_Tombo.md)
 
 ## Srcipts
 
