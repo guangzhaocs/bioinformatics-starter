@@ -1,12 +1,13 @@
-### 00download
-|- KO  
-|&nbsp;&nbsp;&nbsp;&nbsp; - SRR_Acc_List.txt  
-|&nbsp;&nbsp;&nbsp;&nbsp; - SRR1  
-|&nbsp;&nbsp;&nbsp;&nbsp; - ...  
-|- WT  
-|&nbsp;&nbsp;&nbsp;&nbsp; - SRR_Acc_List.txt  
-|&nbsp;&nbsp;&nbsp;&nbsp; - SRR1  
-|&nbsp;&nbsp;&nbsp;&nbsp; - ...
+### File Structure
+00download
+|&nbsp;&nbsp;&nbsp;- KO  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - SRR_Acc_List.txt  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - SRR1  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - ...  
+|&nbsp;&nbsp;&nbsp;- WT  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - SRR_Acc_List.txt  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - SRR1  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - ...
 
   
 
