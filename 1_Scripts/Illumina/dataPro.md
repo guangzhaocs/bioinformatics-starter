@@ -1,12 +1,12 @@
-### File Structure
+## File Structure
 00download  
 |&nbsp;&nbsp;&nbsp;- KO  
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - SRR_Acc_List.txt  
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - SRR1  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - SRR000001  
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - ...  
 |&nbsp;&nbsp;&nbsp;- WT  
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - SRR_Acc_List.txt  
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - SRR1  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - SRR000021  
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - ...
 
   
@@ -18,10 +18,10 @@ add blank line in the txt file
 ```
 
 
-
 ## Download data
 
 ```
+cd 00download/KO
 /scratch/work/chengg1/sraToolkit/sratoolkit.3.0.0-centos_linux64/bin/prefetch-orig.3.0.0 -O output_dir --option-file SRR_Acc_List.txt
 ```
 
