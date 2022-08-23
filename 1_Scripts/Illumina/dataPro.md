@@ -1,6 +1,6 @@
 ### 00download
 |- KO  
-|        - SRR_Acc_List.txt  
+|&nbsp;&nbsp; - SRR_Acc_List.txt  
 |        - SRR1  
 |        - ...  
 |- WT  
