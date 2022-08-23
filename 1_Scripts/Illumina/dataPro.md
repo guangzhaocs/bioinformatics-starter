@@ -1,3 +1,22 @@
+### 00download
+#### KO
+##### SRR_Acc_List.txt
+##### SRR1
+##### ...
+#### WT
+### 01cellranger
+#### KO
+#### WT
+
+
+## Download SRR_Acc_List.txt
+
+```
+add blank line in the txt file
+```
+
+
+
 ## Download data
 
 ```
