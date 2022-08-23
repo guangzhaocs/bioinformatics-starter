@@ -28,12 +28,12 @@ cd 00download/KO
 
 ## unzip
 ```
-for i in `ls output_dir`; do /scratch/work/chengg1/sraToolkit/sratoolkit.3.0.0-centos_linux64/bin/fastq-dump-orig.3.0.0 --split-files --gzip --outdir ${i}/ ${i}/${i}.sra && rm ${i}/${i}.sra; done
+for i in `cat SRR_Acc_List.txt`; do /scratch/work/chengg1/sraToolkit/sratoolkit.3.0.0-centos_linux64/bin/fastq-dump-orig.3.0.0 --split-files --gzip --outdir ${i}/ ${i}/${i}.sra && rm ${i}/${i}.sra; done
 ```
 
 ## rename
 ```
-cat SRR_Acc_List.txt| while read i ;do (mv ${i}/${i}_1*.gz ${i}/${i}_S1_L001_I1_001.fastq.gz;mv ${i}/${i}_2*.gz ${i}/${i}_S1_L001_R1_001.fastq.gz;mv ${i}/${i}_3*.gz ${i}/${i}_S1_L001_R2_001.fastq.gz);done
+for i in `cat SRR_Acc_List.txt`; do (mv ${i}/${i}_1*.gz ${i}/${i}_S1_L001_I1_001.fastq.gz;mv ${i}/${i}_2*.gz ${i}/${i}_S1_L001_R1_001.fastq.gz;mv ${i}/${i}_3*.gz ${i}/${i}_S1_L001_R2_001.fastq.gz);done
 ```
 
 ## copy to cellranger floder
