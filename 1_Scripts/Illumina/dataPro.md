@@ -17,7 +17,7 @@ cat SRR_Acc_List.txt| while read i ;do (mv ${i}/${i}_1*.gz ${i}/${i}_S1_L001_I1_
 
 ## copy to cellranger floder
 ```
-for i in `cat 00download/Ctrl/SRR_Acc_List.txt`; do cp 00download/Ctrl/${i}/* 01process/Ctrl/fq/ ; done
+for i in `cat 00download/Ctrl/SRR_Acc_List.txt`; do cp 00download/Ctrl/${i}/* 01cellranger/Ctrl/fq/ ; done
 ```
 
 ## delate I1
