@@ -1,5 +1,5 @@
 ### File Structure
-00download
+00download  
 |&nbsp;&nbsp;&nbsp;- KO  
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - SRR_Acc_List.txt  
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - SRR1  
