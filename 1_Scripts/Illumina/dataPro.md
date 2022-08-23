@@ -1,12 +1,21 @@
 ### 00download
-#### KO
-##### SRR_Acc_List.txt
-##### SRR1
-##### ...
-#### WT
+|- KO
+|   - SRR_Acc_List.txt
+|   - SRR1
+|   - ...
+|- WT
+|   - SRR_Acc_List.txt
+|   - SRR1
+|   - ...
 ### 01cellranger
-#### KO
-#### WT
+|- KO
+|   - SRR_Acc_List.txt
+|   - SRR1
+|   - ...
+|- WT
+|   - SRR_Acc_List.txt
+|   - SRR1
+|   - ...
 
 
 ## Download SRR_Acc_List.txt
