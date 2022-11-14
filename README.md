@@ -18,4 +18,4 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 - [Heng Li's Homepage](http://www.liheng.org/)
 - [Bioinformatics Tutorial - Basic](https://lulab2.gitbook.io/teaching/)
 - [Lu Lab - RNA Bioinformatics Lab @ Tsinghua Univ.](https://www.ncrnalab.org/home/)
-- [Simpson Lab @ ](https://simpsonlab.github.io/)
+- [Simpson Lab @ University of Toronto](https://simpsonlab.github.io/)
