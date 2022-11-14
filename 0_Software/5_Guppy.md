@@ -9,7 +9,8 @@ https://mirror.oxfordnanoportal.com/software/analysis/ont-guppy-cpu_5.0.11_osx64
 
 GPU Version:
 ```
-https://mirror.oxfordnanoportal.com/software/analysis/ont-guppy_6.0.1_linux64.tar.gz
+wget https://mirror.oxfordnanoportal.com/software/analysis/ont-guppy_6.0.1_linux64.tar.gz
+tar -zvxf ont-guppy_6.0.1_linux64.tar.gz
 ```
 
 
