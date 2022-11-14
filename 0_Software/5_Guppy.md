@@ -1,6 +1,13 @@
 
+## Install
+
+```
+https://mirror.oxfordnanoportal.com/software/analysis/ont-guppy-cpu-5.0.11-win64.msi
+https://mirror.oxfordnanoportal.com/software/analysis/ont-guppy-cpu_5.0.11_osx64.zip
+```
 
 
+## Usage
 ```
 /home/chengg1/Install/ont-guppy-cpu/bin/guppy_basecaller --version
 ```
