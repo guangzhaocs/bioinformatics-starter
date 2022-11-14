@@ -1,7 +1,7 @@
 
 ## Install
 
-
+CPU Version:
 ```
 https://mirror.oxfordnanoportal.com/software/analysis/ont-guppy-cpu-5.0.11-win64.msi
 https://mirror.oxfordnanoportal.com/software/analysis/ont-guppy-cpu_5.0.11_osx64.zip
