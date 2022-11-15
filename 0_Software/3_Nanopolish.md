@@ -46,4 +46,12 @@ fast5_dir
   
  Maybe `fast5_dir` has many subfloder. It does not matter to use `--directory=fast5_dir` in the command.
  
+ ```
+ basecalled.fastq    
+ basecalled.fastq.index
+ basecalled.fastq.index.fai
+ basecalled.fastq.index.gzi
+ basecalled.fastq.index.readdb
+ ```
+ 
  
