@@ -33,15 +33,15 @@ samtools --version
  nanopolish index --directory=fast5 basecalled.fastq
  ```
 
----fast5_dir/
-
-     |---0/
-     
-     |---1/
-     
-     |---10/   
-     
-     |---...
+fast5_dir  
+|---- 0  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - xxx_01.fast5
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - xxx_02.fast5
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - ...  
+|---- 1  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - xxx_01.fast5
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - xxx_02.fast5
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - ...
  
  
  
