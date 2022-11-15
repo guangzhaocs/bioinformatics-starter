@@ -23,3 +23,15 @@ nanopolish --version
 samtools --version
 ```
  
+ # Usage
+ 
+ ### Index
+ 
+ [Nanopolish Tutorial](https://nanopolish.readthedocs.io/en/latest/manual.html#index)
+ 
+ ```
+ nanopolish index --directory=fast5 basecalled.fastq
+ ```
+
+ 
+ 
