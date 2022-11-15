@@ -30,7 +30,7 @@ samtools --version
  [Nanopolish Tutorial](https://nanopolish.readthedocs.io/en/latest/manual.html#index)
  
  ```
- nanopolish index --directory=fast5 basecalled.fastq
+ nanopolish index --directory=fast5_dir basecalled.fastq
  ```
 
 fast5_dir   
@@ -44,6 +44,6 @@ fast5_dir
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - ...  
   
   
-  
+ Maybe `fast5_dir` has many subfloder. It does not matter to use `--directory=fast5_dir` in the command.
  
  
