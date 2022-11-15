@@ -44,7 +44,7 @@ fast5_dir
 |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - ...  
   
   
- Maybe `fast5_dir` has many subfloder. It does not matter to use `--directory=fast5_dir` in the command. The output of the command are as follows. So it would be better run the command under the `fastq` file folder.
+Maybe `fast5_dir` has many subfolders. It would be OK to use `--directory=fast5_dir` in the command. The output of the command is as follows. So it would be better to run the command under the `fastq` file folder.
  
  ```
  basecalled.fastq    
