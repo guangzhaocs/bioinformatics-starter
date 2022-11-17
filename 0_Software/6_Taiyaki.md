@@ -24,3 +24,11 @@ cd ..
 python taiyaki/misc/upgrade_model.py pretrained/r941_dna_minion.checkpoint
  
 ```
+
+## Usage
+
+```
+cd /scratch/cs/nanopore/chengg1/base_calling/dataset/taiyaki_walkthrough
+cd taiyaki && source venv/bin/activate && cd ..
+sbatch map.sh
+```
