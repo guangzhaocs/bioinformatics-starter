@@ -43,5 +43,13 @@ fastq(length:6848)
 AAGTATTGCTTCGTTCA......GCAATACGTAACTTCGC
 
 SEQ in bam file(length:6848)
-GCGAAGTTACGTATTGC......TGAACGAAGCAATACTT(reverse complement of fastq)
+GCGAAGTTACGTATTGC......TGAACGAAGCAATACTT(reverse complement of fastq, because the flag is 16)
 ```
+
+
+
+
+
+### Reference
+
+[1] https://blog.sciencenet.cn/blog-994715-1341509.html
