@@ -5,12 +5,15 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 
 ## Software Installation
 
+- [illumina](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/2_Illumina.md)
 - [nanopolish](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/3_Nanopolish.md)
 - [tombo](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/4_Tombo.md)
+- [guppy](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/5_Guppy.md)
+- [taiyaki](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/6_Taiyaki.md)
 
 ## Srcipts
 
-- 
+- [minimap2](https://github.com/guangzhaocs/bioinformatics-starter/tree/main/1_Scripts/minimap2)
 
 
 ## Links
