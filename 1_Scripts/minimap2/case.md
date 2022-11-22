@@ -1,8 +1,10 @@
 
+## Example 1: Taiyaki Walk-through (DNA)
+
+
 ```
 minimap2 -I 16G -x map-ont -t 32 -a --secondary=no reference.fasta basecalls/*.fastq | samtools view -bST reference.fasta - > basecalls.bam
 ```
-
 
 ```
 samtools view -h -o basecalls.sam basecalls.bam
@@ -89,6 +91,7 @@ c08f78a3-3ea1-42a4-ad47-10964168365b	16	chr5_NA12878_paternal	90633110	55	16S117
 
 ## Example
 
-```
+read id: cc8739aa-9335-4a77-8681-f13b0b411a80
+fast5(length:75742)
+fastq(length:6848)
 
-```
