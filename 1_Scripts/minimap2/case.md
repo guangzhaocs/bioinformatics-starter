@@ -45,13 +45,22 @@ AAGTATTGCTTCGTTCA......GCAATACGTAACTTCGC
 SEQ in bam file(length:6848)
 GCGAAGTTACGTATTGC......TGAACGAAGCAATACTT(reverse complement of fastq, because the flag is 16)
 
+read_references(length:6821)
+TGTAAAATATCGAGTTCGCACATTT......CAACCCGCGCCAATTTATATCTA
 
 read.flag :  16
 read.query_name :  cc8739aa-9335-4a77-8681-f13b0b411a80
-read.query_alignment_length :  6800
 read.query_length :  6848
+read.query_sequence :   GCGAAGTTACGTATTGCTTAGATATAAAT......GCAATACGTAACTGAACGAAGCAATACTT
+read.query_alignment_length :  6800
+read.query_alignment_start :  18
+read.query_alignment_end :  6818
+read.query_alignment_sequence :  TAGATATAAATTGGCGCGGGTTGTTT......ATGTGCGAACTCGATATTTTACA
+read.reference_name :  ecoli_SCS110_chromosome
 read.reference_start :  2803509
 read.reference_end :  2810330
+read.reference_length :  6821
+read.get_reference_positions :  [2803509, 2803510, 2803511, 2803512, 2803513, ....  2810324, 2810325, 2810326, 2810327, 2810328, 2810329]
 ```
 
 
