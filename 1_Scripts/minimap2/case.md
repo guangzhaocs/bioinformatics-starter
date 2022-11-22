@@ -69,5 +69,5 @@ read.get_reference_positions :  [2803509, 2803510, 2803511, 2803512, 2803513, ..
 
 ### Reference
 
-[1] https://blog.sciencenet.cn/blog-994715-1341509.html
+[1] https://blog.sciencenet.cn/blog-994715-1341509.html   
 [2] https://buildmedia.readthedocs.org/media/pdf/pysam/latest/pysam.pdf
