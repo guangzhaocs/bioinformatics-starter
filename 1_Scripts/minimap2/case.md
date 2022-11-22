@@ -2,6 +2,11 @@
 
 ![image](https://user-images.githubusercontent.com/85612159/203283488-c6883d39-88e0-4bd8-98c4-a6b25f074865.png)
 
+![image](https://user-images.githubusercontent.com/85612159/203286570-33471206-63e6-4099-baee-35bef6670b71.png)
+
+![image](https://user-images.githubusercontent.com/85612159/203286526-bd44fe75-7c74-42be-ad55-5399a1ee47e1.png)
+
+
 
 
 ## Example 1: Taiyaki Walk-through (DNA)
@@ -96,5 +101,10 @@ c08f78a3-3ea1-42a4-ad47-10964168365b	16	chr5_NA12878_paternal	90633110	55	16S117
 ```
 read id: cc8739aa-9335-4a77-8681-f13b0b411a80
 fast5(length:75742)
+
 fastq(length:6848)
+AAGTATTGCTTCGTTCA......GCAATACGTAACTTCGC
+
+SEQ in bam file(length:6848)
+GCGAAGTTACGTATTGC......TGAACGAAGCAATACTT
 ```
