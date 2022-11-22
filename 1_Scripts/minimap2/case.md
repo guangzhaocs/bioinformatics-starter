@@ -44,6 +44,14 @@ AAGTATTGCTTCGTTCA......GCAATACGTAACTTCGC
 
 SEQ in bam file(length:6848)
 GCGAAGTTACGTATTGC......TGAACGAAGCAATACTT(reverse complement of fastq, because the flag is 16)
+
+
+read.flag :  16
+read.query_name :  cc8739aa-9335-4a77-8681-f13b0b411a80
+read.query_alignment_length :  6800
+read.query_length :  6848
+read.reference_start :  2803509
+read.reference_end :  2810330
 ```
 
 
