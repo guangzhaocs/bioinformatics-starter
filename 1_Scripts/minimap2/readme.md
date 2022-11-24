@@ -99,6 +99,6 @@ read.reference_length :  1514
 ```
 
 ### Reference
-
-[1] https://blog.sciencenet.cn/blog-994715-1341509.html   
-[2] https://buildmedia.readthedocs.org/media/pdf/pysam/latest/pysam.pdf
+[1] https://lh3.github.io/minimap2/minimap2.html   
+[2] https://blog.sciencenet.cn/blog-994715-1341509.html   
+[3] https://buildmedia.readthedocs.org/media/pdf/pysam/latest/pysam.pdf
