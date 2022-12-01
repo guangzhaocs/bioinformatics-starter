@@ -3,7 +3,7 @@
 This blog introduces the Bioinformatics Software Installation, the srcipts of Bioinformatics processing and so on.
 
 
-## Software Installation
+## Software Installation and Usage
 
 - [illumina](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/2_Illumina.md)
 - [nanopolish](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/3_Nanopolish.md)
