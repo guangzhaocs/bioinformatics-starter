@@ -26,10 +26,9 @@ The `order=1` in the above table means that the current signal sequence needs to
 
 ### eventalign analysis
 
-![image](https://user-images.githubusercontent.com/85612159/222482953-fd61918a-b187-4b07-a605-12a985e260c2.png)
+![image](https://user-images.githubusercontent.com/85612159/222488255-4b2101a2-6002-4507-9758-b61cc97823e0.png)
+![image](https://user-images.githubusercontent.com/85612159/222488370-9f276c26-1bc5-4bfc-b430-c58920c44804.png)
 
-![image](https://user-images.githubusercontent.com/85612159/222483820-4d26fc88-db4c-44bb-8f1f-cb798603f285.png)
-![image](https://user-images.githubusercontent.com/85612159/222483914-8ee18a1c-f356-4055-a270-5769d4911c4b.png)
 
 
 
