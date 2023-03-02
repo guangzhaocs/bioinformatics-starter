@@ -19,9 +19,12 @@ SAM flags explanation (https://broadinstitute.github.io/picard/explain-flags.htm
 2048: supplementary alignment
 ```
 
-### event align summary
+### eventalign summary
 ![image](https://user-images.githubusercontent.com/85612159/222476990-b23f4941-16b6-41da-9abb-c881c979cb04.png)
 
 The `order=1` in the above table means that the current signal sequence needs to reverse. This corresponds with the `sam flag`.Because`16` and `2064` indicate that `read reverse strand`.
 
+### eventalign analysis
+
+![image](https://user-images.githubusercontent.com/85612159/222482953-fd61918a-b187-4b07-a605-12a985e260c2.png)
 
