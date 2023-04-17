@@ -53,5 +53,7 @@ Maybe `fast5_dir` has many subfolders. It would be OK to use `--directory=fast5_
  basecalled.fastq.index.gzi
  basecalled.fastq.index.readdb
  ```
+ # Attention
  
+ The `summary.txt` and `eventalign.txt` maybe have more than one mapping result for each read.
  
