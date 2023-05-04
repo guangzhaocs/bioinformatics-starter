@@ -21,11 +21,11 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 ## Links
 
 ### Single Cell Genomics, High-throughput Sequence
-- [Satija Lab @ NYU](https://satijalab.org/)
+- [Satija Lab @ New York Genome Center (NYGC)](https://satijalab.org/)
 - [HLi Lab @ Harvard Medical School](https://hlilab.github.io/)
-- [Lu Lab - RNA Bioinformatics Lab @ Tsinghua Univ.](https://www.ncrnalab.org/home/)
+- [Lu Lab @ Tsinghua University](https://www.ncrnalab.org/home/)
 - [Simpson Lab @ University of Toronto](https://simpsonlab.github.io/)
-- [DING LAB @ UNIVERSITY OF ARIZONA](http://dinghongxulab.org/)
+- [DING Lab @ University of Arizona](http://dinghongxulab.org/)
 
 ### AI4Healthcare, Drug Discovery
 - [SUNLAB @ UIUC](https://www.sunlab.org/)
