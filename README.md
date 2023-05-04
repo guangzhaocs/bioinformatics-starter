@@ -18,19 +18,19 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 ## Tutorial
 - [Bioinformatics Tutorial (Lu Lab@Tsinghua University)](https://book.ncrnalab.org/teaching/)
 
-## Labs @ University
+## Labs@University
 
-### Single Cell Genomics, High-throughput Sequence
+#### Single Cell Genomics, High-throughput Sequence
 - [Satija Lab @ New York Genome Center (NYGC)](https://satijalab.org/)
 - [HLi Lab @ Harvard Medical School](https://hlilab.github.io/)
 - [Lu Lab @ Tsinghua University](https://www.ncrnalab.org/home/)
 - [Simpson Lab @ University of Toronto](https://simpsonlab.github.io/)
 - [DING Lab @ University of Arizona](http://dinghongxulab.org/)
 
-### AI4Healthcare, Drug Discovery
+#### AI4Healthcare, Drug Discovery
 - [SUNLAB @ UIUC](https://www.sunlab.org/)
 
-## Research @ company
+## Research@Company
 
 - [Microsoft Research AI4Science](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/)   
 - [Computational Biology Group @ Microsoft Research Lab – Asia](https://www.microsoft.com/en-us/research/group/computational-biology-group/)   
