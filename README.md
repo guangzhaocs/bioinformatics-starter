@@ -32,5 +32,5 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 
 ## Research @ company
 
-- [Microsoft Research AI4Science](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/)
-- [Computational Biology Group @ Microsoft Research Lab – Asia](https://www.microsoft.com/en-us/research/group/computational-biology-group/)
+- [Microsoft Research AI4Science](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/)   
+- [Computational Biology Group @ Microsoft Research Lab – Asia](https://www.microsoft.com/en-us/research/group/computational-biology-group/)   
