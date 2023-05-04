@@ -15,10 +15,16 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 
 - [minimap2](https://github.com/guangzhaocs/bioinformatics-starter/tree/main/1_Scripts/minimap2)
 
+## Tutorial
+- [Bioinformatics Tutorial - Basic](https://lulab2.gitbook.io/teaching/)
 
 ## Links
+
+### 
 - [Satija Lab @ NYU](https://satijalab.org/)
 - [HLi Lab @ Harvard Medical School](https://hlilab.github.io/)
-- [Bioinformatics Tutorial - Basic](https://lulab2.gitbook.io/teaching/)
 - [Lu Lab - RNA Bioinformatics Lab @ Tsinghua Univ.](https://www.ncrnalab.org/home/)
 - [Simpson Lab @ University of Toronto](https://simpsonlab.github.io/)
+
+### AI4Healthcare, Drug Discovery
+- [SUNLAB @ UIUC](https://www.sunlab.org/)
