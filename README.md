@@ -18,7 +18,7 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 ## Tutorial
 - [Bioinformatics Tutorial (Lu Lab@Tsinghua University)](https://book.ncrnalab.org/teaching/)
 
-## Links
+## Labs @ University
 
 ### Single Cell Genomics, High-throughput Sequence
 - [Satija Lab @ New York Genome Center (NYGC)](https://satijalab.org/)
@@ -29,3 +29,8 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 
 ### AI4Healthcare, Drug Discovery
 - [SUNLAB @ UIUC](https://www.sunlab.org/)
+
+## Research @ company
+
+- [Microsoft Research AI4Science](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/)
+- [Computational Biology Group @ Microsoft Research Lab – Asia](https://www.microsoft.com/en-us/research/group/computational-biology-group/)
