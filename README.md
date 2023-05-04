@@ -18,7 +18,7 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 
 ## Links
 - [Satija Lab @ NYU](https://satijalab.org/)
-- [Heng Li's Homepage](http://www.liheng.org/)
+- [HLi Lab](https://hlilab.github.io/)
 - [Bioinformatics Tutorial - Basic](https://lulab2.gitbook.io/teaching/)
 - [Lu Lab - RNA Bioinformatics Lab @ Tsinghua Univ.](https://www.ncrnalab.org/home/)
 - [Simpson Lab @ University of Toronto](https://simpsonlab.github.io/)
