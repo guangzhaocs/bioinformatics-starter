@@ -16,7 +16,7 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 - [minimap2](https://github.com/guangzhaocs/bioinformatics-starter/tree/main/1_Scripts/minimap2)
 
 ## Tutorial
-- [Bioinformatics Tutorial - Basic](https://lulab2.gitbook.io/teaching/)
+- [Bioinformatics Tutorial (Lu Lab@Tsinghua University)](https://book.ncrnalab.org/teaching/)
 
 ## Links
 
