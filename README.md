@@ -31,6 +31,9 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 - [SUNLAB @ UIUC](https://www.sunlab.org/)
 
 ## Research@Company
-
+- [Deepmind](https://www.deepmind.com/research?tag=Sciences)
+- [Health & bioscience @ Google Research](https://research.google/research-areas/health-bioscience/)    
 - [Microsoft Research AI4Science](https://www.microsoft.com/en-us/research/lab/microsoft-research-ai4science/)   
 - [Computational Biology Group @ Microsoft Research Lab – Asia](https://www.microsoft.com/en-us/research/group/computational-biology-group/)   
+- [Computational Biology and Bioinformatics @ Baidu Research](http://research.baidu.com/Research_Areas/index-view?id=61)   
+
