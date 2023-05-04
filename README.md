@@ -1,4 +1,4 @@
-# Quickstart: Travel to Bioinformatics :blush:
+# Quickstart: Travel to Bioinformatics, AI for Health :blush:
 
 This blog introduces the Bioinformatics Software Installation, the srcipts of Bioinformatics processing and so on.
 
