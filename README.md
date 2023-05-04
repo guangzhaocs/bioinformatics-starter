@@ -9,10 +9,7 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 - [nanopolish](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/3_Nanopolish.md)
 - [tombo](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/4_Tombo.md)
 - [guppy](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/5_Guppy.md)
-- [taiyaki](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/6_Taiyaki.md)
-
-## Srcipts
-
+- [taiyaki](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/6_Taiyaki.md)    
 - [minimap2](https://github.com/guangzhaocs/bioinformatics-starter/tree/main/1_Scripts/minimap2)
 
 ## Tutorial
@@ -20,7 +17,7 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 
 ## Labs@University
 
-#### Single Cell Genomics, High-throughput Sequence
+#### Single Cell Genomics, High-throughput Sequencing    
 - [Satija Lab @ New York Genome Center (NYGC)](https://satijalab.org/)
 - [HLi Lab @ Harvard Medical School](https://hlilab.github.io/)
 - [Lu Lab @ Tsinghua University](https://www.ncrnalab.org/home/)
