@@ -14,6 +14,7 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 
 ## Tutorial
 - [Bioinformatics Tutorial (Lu Lab@Tsinghua University)](https://book.ncrnalab.org/teaching/)
+- [Software](https://hpc.pku.edu.cn/_book/guide/soft/bioconda.html)
 
 ## Labs@University
 
