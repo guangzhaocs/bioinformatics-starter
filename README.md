@@ -1,8 +1,5 @@
 # Quickstart: Travel to Bioinformatics, AI for Health :blush:
 
-This blog introduces the Bioinformatics Software Installation, the srcipts of Bioinformatics processing and so on.
-
-
 ## Software Installation and Usage
 
 - [illumina](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/2_Illumina.md)
@@ -40,4 +37,4 @@ This blog introduces the Bioinformatics Software Installation, the srcipts of Bi
 
 ## Conference
 
-- Machine Learning for Health (ML4H)[2022](https://ml4health.github.io/2022/)
+- Machine Learning for Health (ML4H) [2022](https://ml4health.github.io/2022/) [2023](https://ml4health.github.io/2023/)
