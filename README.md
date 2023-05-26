@@ -12,7 +12,7 @@
 ## Tutorial and Book
 - [Bioinformatics Tutorial (Lu Lab@Tsinghua University)](https://book.ncrnalab.org/teaching/)
 - [Software](https://hpc.pku.edu.cn/_book/guide/soft/bioconda.html)
-- [Modern Statistics for Modern Biology(Susan Holmes, Wolfgang Huber)](http://web.stanford.edu/class/bios221/book/)
+- [Modern Statistics for Modern Biology (Susan Holmes, Wolfgang Huber)](http://web.stanford.edu/class/bios221/book/)
 
 ## Labs@University
 
