@@ -9,9 +9,10 @@
 - [taiyaki](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/6_Taiyaki.md)    
 - [minimap2](https://github.com/guangzhaocs/bioinformatics-starter/tree/main/1_Scripts/minimap2)
 
-## Tutorial
+## Tutorial and Book
 - [Bioinformatics Tutorial (Lu Lab@Tsinghua University)](https://book.ncrnalab.org/teaching/)
 - [Software](https://hpc.pku.edu.cn/_book/guide/soft/bioconda.html)
+- [Modern Statistics for Modern Biology(Susan Holmes, Wolfgang Huber)](http://web.stanford.edu/class/bios221/book/)
 
 ## Labs@University
 
