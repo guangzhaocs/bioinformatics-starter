@@ -1,5 +1,10 @@
 # Quickstart: Travel to Bioinformatics, AI for Health :blush:
 
+## Domain Knowledge
+
+- [Unified Medical Language System](https://www.nlm.nih.gov/research/umls/index.html)
+
+
 ## Software Installation and Usage
 
 - [illumina](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/2_Illumina.md)
