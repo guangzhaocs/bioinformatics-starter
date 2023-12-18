@@ -19,6 +19,10 @@
 - [Software](https://hpc.pku.edu.cn/_book/guide/soft/bioconda.html)
 - [Modern Statistics for Modern Biology (Susan Holmes, Wolfgang Huber)](http://web.stanford.edu/class/bios221/book/)
 
+## Courses
+- [MIT 6.874 Computational Systems Biology: Deep Learning in the Life Sciences](https://mit6874.github.io/)
+
+
 ## Labs@University
 
 #### Single Cell Genomics, High-throughput Sequencing    
