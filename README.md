@@ -1,4 +1,4 @@
-# Quickstart: Travel to AI in Bioinformatics and Health :blush:
+# Quickstart: Travel to Bioinformatics :blush:
 
 ## Domain Knowledge
 
