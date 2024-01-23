@@ -1,5 +1,8 @@
 
 ## Version of mine
+```
+guppy_basecaller --version
+```
 Guppy Basecalling Software, (C) Oxford Nanopore Technologies, Limited. Version 6.0.1+652ffd1
 
 ## Config
