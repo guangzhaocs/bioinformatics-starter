@@ -1,10 +1,9 @@
 
-## Version 
+## Version of mine
+CPU: `Guppy Basecalling Software, (C) Oxford Nanopore Technologies, Limited. Version 6.0.1+652ffd1`
+GPU: `...`
 
-CPU : `Guppy Basecalling Software, (C) Oxford Nanopore Technologies, Limited. Version 6.0.1+652ffd1`
-
-
-
+## Config
 ```
 guppy_basecaller --print_workflows
 ```
