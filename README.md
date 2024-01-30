@@ -46,8 +46,9 @@
 - [Apple Machine Learning Research](https://machinelearning.apple.com/research?page=1&domain=Health)
 
 
-## Conference
+## Conference & Workshop
 
 - Machine Learning for Health (ML4H) [2022](https://ml4health.github.io/2022/) [2023](https://ml4health.github.io/2023/)
 - Machine Learning in Computational Biology (MLCB) [2023](https://sites.google.com/cs.washington.edu/mlcb2023/home?authuser=0)
-- ICML Workshop on Computational Biology
+- ICML Workshops
+   - Computational Biology
