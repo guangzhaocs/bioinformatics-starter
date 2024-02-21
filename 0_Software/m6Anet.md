@@ -6,7 +6,7 @@ pip install m6anet
 ```
 
 ```
-m6anet dataprep --eventalign nanopolish/eventalign.txt --out_dir m6anet_input --n_processes 4
+m6anet dataprep --eventalign eventalign_demo.txt --out_dir m6anet_input --n_processes 4
 ```
 
 ```
