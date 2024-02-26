@@ -4,7 +4,11 @@
 conda create -n m6anet_env python=3.7
 pip install m6anet
 ```
-
+```
+git clone https://github.com/guangzhaocs/m6anet.git
+cd m6anet
+pip install .
+```
 ```
 m6anet dataprep --eventalign eventalign_demo.txt --out_dir m6anet_input --n_processes 4
 ```
