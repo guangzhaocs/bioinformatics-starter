@@ -15,7 +15,7 @@ conda install -c bioconda r-tailfindr
 
 ```
 library(tailfindr)
-df <- find_tails(fast5_dir = 'fast5',
+df <- find_tails(fast5_dir = 'fastq/workspace',
                  save_dir = 'tailfindr',
                  basecall_group = 'NanapolishEvent',
                  csv_filename = 'rna_tails.csv',
