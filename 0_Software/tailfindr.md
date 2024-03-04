@@ -10,11 +10,21 @@ source activate tailfindr
 ```
 pip install pyvbz-1.0.1-cp38-cp38-linux_x86_64.whl
 conda install h5py
+conda install -c bioconda r-tailfindr
 ```
 
 ```
-conda install -c r r-devtools 
-R
-devtools::install_url('https://cran.r-project.org/src/contrib/Archive/rbokeh/rbokeh_0.5.1.tar.gz', type = "source", dependencies = TRUE)
-devtools::install_github("adnaniazi/tailfindr")
+library(tailfindr)
+df <- find_tails(fast5_dir = 'fast5',
+                 save_dir = 'tailfindr',
+                 basecall_group = 'NanapolishEvent',
+                 csv_filename = 'rna_tails.csv',
+                 num_cores = 2)
+```
+
+```
+df <- find_tails(fast5_dir = system.file('extdata', 'rna', package = 'tailfindr'),
+                 save_dir = 'tailfindr',
+                 csv_filename = 'rna_tails.csv',
+                 num_cores = 2)
 ```
