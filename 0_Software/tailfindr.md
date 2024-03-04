@@ -1,6 +1,8 @@
 
 ```
-conda create -n tailfindr python=3.8
+cd /scratch/work/chengg1/tailfindr
+module load miniconda
+conda create -n tailfindr python=3.8 r-base=4.3
 ```
 
 
