@@ -50,7 +50,12 @@ module load cuda
 
 ![image](https://user-images.githubusercontent.com/85612159/201746065-bb75e32b-cebb-47cc-a423-26fd8fbb96ca.png)
 
+```
+--fast5_out                           Choice of whether to do fast5 output.
+-r [ --recursive ]                    Search for input files recursively.
+--disable_pings                       Disable the transmission of telemetry pings.
 
+```
 
 
 
