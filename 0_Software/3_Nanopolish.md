@@ -6,8 +6,8 @@ Attention: Do not use the Nanopolish Installation Tutorial and you must install 
 ### 1. Creat anaconda environment
 
 ```
-conda create -n nanopolish_env python=3.7
-source activate nanopolish_env 
+conda create -n nanopolish2_env python=3.7
+source activate nanopolish2_env 
 ```
 
 ### 2. Install samtools
