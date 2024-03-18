@@ -1,5 +1,5 @@
 
-# Installation
+# Installation (test 2024.03.18)
 
 Attention: Do not use the Nanopolish Installation Tutorial and you must install samtools before nanopolish!
  
@@ -14,19 +14,25 @@ source activate nanopolish_env
 ```
 conda install -c bioconda samtools=1.9 --force-reinstall
 samtools --version
-```
-
-```
-samtools 1.9
-Using htslib 1.9
-Copyright (C) 2018 Genome Research Ltd.
+# samtools 1.9
+# Using htslib 1.9
+# Copyright (C) 2018 Genome Research Ltd.
 ```
 
 ### 3. Install nanopolish
 ```
 conda install nanopolish
 nanopolish --version
+# nanopolish version 0.13.2
+# Written by Jared Simpson.
+# 
+# Copyright 2015-2017 Ontario Institute for Cancer Research
+
 samtools --version
+# samtools 1.9
+# Using htslib 1.9
+# Copyright (C) 2018 Genome Research Ltd.
+
 ```
  
  # Usage
