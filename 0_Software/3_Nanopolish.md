@@ -16,6 +16,12 @@ conda install -c bioconda samtools=1.9 --force-reinstall
 samtools --version
 ```
 
+```
+samtools 1.9
+Using htslib 1.9
+Copyright (C) 2018 Genome Research Ltd.
+```
+
 ### 3. Install nanopolish
 ```
 conda install nanopolish
