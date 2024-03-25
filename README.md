@@ -1,5 +1,8 @@
 # Quickstart: Travel to Bioinformatics :blush:
 
+https://labs.epi2me.io/
+
+
 ## Software Installation and Usage
 
 - [illumina](https://github.com/guangzhaocs/bioinformatics-starter/blob/main/0_Software/2_Illumina.md)
