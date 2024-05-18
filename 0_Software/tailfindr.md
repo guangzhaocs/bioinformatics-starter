@@ -5,6 +5,7 @@ module load miniconda
 module load gcc/9.3.0
 conda create -n tailfindr python=3.8 r-base=4.3
 source activate tailfindr
+module load gcc/9.3.0
 ```
 
 ```
