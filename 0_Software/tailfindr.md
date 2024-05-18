@@ -29,3 +29,13 @@ df <- find_tails(fast5_dir = system.file('extdata', 'rna', package = 'tailfindr'
                  csv_filename = 'rna_tails.csv',
                  num_cores = 2)
 ```
+
+```
+module load mamba
+conda create -n tailfindr_old python=3.6 r-base=4.1
+source activate tailfindr_old
+module load gcc
+pip install pyvbz-1.0.1-cp36-cp36m-linux_x86_64.whl
+conda install h5py
+conda install -c bioconda r-tailfindr==1.2-0
+```
