@@ -50,3 +50,7 @@ https://labs.epi2me.io/
 - Machine Learning in Computational Biology (MLCB) [2023](https://sites.google.com/cs.washington.edu/mlcb2023/home?authuser=0)
 - ICML Workshops
    - Computational Biology [2023](https://icml-compbio.github.io/index.html)
+ 
+## Misc.
+
+- https://www.heidelberg-laureate-forum.org/
